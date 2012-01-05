@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite errors="0" failures="0" name="wikiSearch" file="/Users/sjagtap/Behat/BDD/behatclean/features/wikiSearch.feature" tests="32" time="45.581655">
+    <testcase classname="wikiSearch" name="Search Keywords on wiki" time="17.298551">
+    </testcase>
+    <testcase classname="wikiSearch" name="Search Keywords on wiki" time="3.943549">
+    </testcase>
+    <testcase classname="wikiSearch" name="Search Keywords on wiki" time="3.942796">
+    </testcase>
+    <testcase classname="wikiSearch" name="Search Keywords on wiki" time="4.058075">
+    </testcase>
+    <testcase classname="wikiSearch" name="Search Keywords on wiki" time="4.109061">
+    </testcase>
+    <testcase classname="wikiSearch" name="Search Keywords on wiki" time="3.898665">
+    </testcase>
+    <testcase classname="wikiSearch" name="Search Keywords on wiki" time="3.959059">
+    </testcase>
+    <testcase classname="wikiSearch" name="Search Keywords on wiki" time="4.024971">
+    </testcase>
+</testsuite>

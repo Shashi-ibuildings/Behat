@@ -1,0 +1,8 @@
+default:
+    context:
+        parameters:
+            javascript_session: webdriver
+            base_url: http://en.wikipedia.org/wiki/Main_Page
+            browser: firefox
+            show_cmd: open %s
+
