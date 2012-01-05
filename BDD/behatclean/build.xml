@@ -1,0 +1,18 @@
+<project name="behat" default= "behat" basedir="">
+   <delete dir="${basedir}/report" />
+   <mkdir dir="${basedir}/report"/>
+   <target name="behat">
+    <exec dir="${basedir}" executable="behat" failonerror="true">
+     <arg line="-c sauce.yml -f junit --out ${basedir}/report"/>
+    </exec>
+   </target>
+   <target name="create-test-report"  
+          description="Generate reports for executed JUnit tests.">  
+       <junitreport todir="./report">  
+          <fileset dir="${basedir}/report">  
+             <include name="TEST-*.xml"/>  
+          </fileset>  
+          <report format="frames" todir="./report/html"/>  
+       </junitreport>  
+   </target>  
+</project>
