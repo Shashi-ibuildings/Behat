@@ -6,6 +6,22 @@
      <arg line="-f junit --out ${basedir}/report"/>
     </exec>
    </target>
+   <target name="run-test" description="Start Server ;  stop Server">
+      <parallel>
+          <antcall target="start-selenium-server"></antcall>
+          <sequential>
+              <echo taskname="waitfor" message="Wait for selenium server launch" />
+              <waitfor maxwait="2" maxwaitunit="minute" checkevery="100">
+                  <http url="http://localhost:4444/selenium-server/driver/?cmd=testComplete"/>
+              </waitfor>
+                  <antcall target="selenium"></antcall>
+                  <antcall target="stop-server"></antcall>
+          </sequential>
+      </parallel>
+   </target>
+   
+   
+   
    <target name="selenium">
     <exec dir="${basedir}" executable="behat" failonerror="true">
      <arg line="-c selenium.yml -f junit --out ${basedir}/report"/>
@@ -16,7 +32,7 @@
      <arg line="-c webdriver.yml -f junit --out ${basedir}/report"/>
     </exec>
    </target>
-   <target name="sahi">
+   <target name="sahi" depends="start-sahi-server">
     <exec dir="${basedir}" executable="behat" failonerror="true">
      <arg line="-c sahi.yml -f junit --out ${basedir}/report"/>
     </exec>
@@ -25,6 +41,21 @@
     <exec dir="${basedir}" executable="behat" failonerror="true">
      <arg line="-c sauce.yml -f junit --out ${basedir}/report"/>
     </exec>
+   </target>
+   <target name="start-selenium-server">
+      <java jar="${basedir}/selenium/selenium-server-standalone-2.15.0.jar" fork="true" spawn="true">
+      </java>
+   </target>
+   <target name="stop-server">
+      <get taskname="selenium-shutdown"
+          src="http://localhost:4444/selenium-server/driver/?cmd=shutDownSeleniumServer"
+          dest="${basedir}/report/server_shutdown_log.txt" ignoreerrors="true" />
+      <echo taskname="selenium-shutdown" message="DGF Errors during shutdown are expected" />
+   </target>
+   <target name="start-sahi-server">
+     <exec dir="${basedir}/sahi/userdata/bin" executable="bash" failonerror="true">
+     <arg line="start_sahi.sh"/>
+    </exec> 
    </target>
    <target name="create-test-report"  
           description="Generate reports for executed JUnit tests.">  
