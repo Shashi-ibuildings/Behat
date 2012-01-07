@@ -6,7 +6,7 @@
      <arg line="-f junit --out ${basedir}/report"/>
     </exec>
    </target>
-   <target name="run-test" description="Start Server ;  stop Server">
+   <target name="seleniumTests" description="Start Server ;  stop Server">
       <parallel>
           <antcall target="start-selenium-server"></antcall>
           <sequential>
@@ -16,6 +16,35 @@
               </waitfor>
                   <antcall target="selenium"></antcall>
                   <antcall target="stop-server"></antcall>
+          </sequential>
+      </parallel>
+   </target>
+   
+   <target name="WebDriverTests" description="Start Server ;  stop Server">
+      <parallel>
+          <antcall target="start-selenium-server"></antcall>
+          <sequential>
+              <echo taskname="waitfor" message="Wait for selenium server launch" />
+              <waitfor maxwait="2" maxwaitunit="minute" checkevery="100">
+                  <http url="http://localhost:4444/selenium-server/driver/?cmd=testComplete"/>
+              </waitfor>
+                  <antcall target="webdriver"></antcall>
+                  <antcall target="stop-server"></antcall>
+          </sequential>
+      </parallel>
+   </target>
+   
+   <target name="sahiTests" description="Start Server">
+      <parallel>
+          <antcall target="start-sahi-server"></antcall>
+          <sequential>
+              <echo taskname="waitfor" message="Wait for sahi server launch" />
+              <waitfor maxwait="1" maxwaitunit="minute" checkevery="100">
+                  <http url="http://sahi.example.com/_s_/dyn/Driver_initialized"/>
+              </waitfor>
+                  <antcall target="sahi"></antcall>
+                 <antcall target="stop_sahiserver"></antcall>
+
           </sequential>
       </parallel>
    </target>
@@ -57,6 +86,11 @@
      <arg line="start_sahi.sh"/>
     </exec> 
    </target>
+   <target name="stop_sahiserver">
+	<echo message="going to stop Sahi server" />
+	<sahi stop="true" sahihost="localhost" sahiport="9999"/>
+	<antcall target="proxyoff" />
+</target>
    <target name="create-test-report"  
           description="Generate reports for executed JUnit tests.">  
        <junitreport todir="./report">  
