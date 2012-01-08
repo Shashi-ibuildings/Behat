@@ -23,7 +23,6 @@ class FeatureContext extends MinkContext
    /**
      * @Given /^I fill in searchBox with "([^"]*)"$/
      */
-   
     public function iFillInSearchboxWith($input)
     {
         $this->fillField("searchInput",$input); 
@@ -32,7 +31,6 @@ class FeatureContext extends MinkContext
     /**
      * @When /^I press search button$/
      */
-  
     public function iPressSearchButton()
     {
         $this->getMink()->getSession()->getDriver()->click("//*[@id='searchButton']");
