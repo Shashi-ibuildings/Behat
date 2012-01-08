@@ -1,0 +1,143 @@
+Generated File. Do not edit.
+
+[HEADER]
+Version:0.11:$
+
+[PLUGINS]
+Flash Player.plugin:$
+/Library/Internet Plug-Ins/Flash Player.plugin:$
+10.3.183.7:$
+1316205021000:0:5:$
+Shockwave Flash 10.3 r183:$
+Shockwave Flash:$
+2
+0:application/x-shockwave-flash:Shockwave Flash:swf:$
+1:application/futuresplash:FutureSplash Player:spl:$
+CitrixICAClientPlugIn.plugin:$
+/Library/Internet Plug-Ins/CitrixICAClientPlugIn.plugin:$
+11.4.0:$
+1313778163000:0:5:$
+Simple plug-in that handles Citrix connection files:$
+Citrix Receiver Plug-in:$
+1
+0:application/x-ica:Citrix Connection File:ica,asp,jsp,xps,aspx:$
+LogMeIn.plugin:$
+/Library/Internet Plug-Ins/LogMeIn.plugin:$
+1.0.586:$
+1310487502000:0:5:$
+LogMeIn remote control components:$
+LogMeIn Plugin 1.0.0.586:$
+4
+0:application/x-3amlabs-raversion:Version::$
+1:application/x-3amlabs-rafiletransfer:File Transfer::$
+2:application/x-3amlabs-raremotecontrol:Remote Control::$
+3:application/x-3amlabs-raperfview:Performance Viewer::$
+QuickTime Plugin.plugin:$
+/Library/Internet Plug-Ins/QuickTime Plugin.plugin:$
+7.7.1:$
+1308549020000:0:5:$
+The QuickTime Plugin allows you to view a wide variety of multimedia content in web pages. For more information, visit the <A HREF=http://www.apple.com/quicktime>QuickTime</A> Web site.:$
+QuickTime Plug-in 7.7.1:$
+62
+0:application/sdp:SDP stream descriptor:sdp:$
+1:application/x-sdp:SDP stream descriptor:sdp:$
+2:application/x-rtsp:RTSP stream descriptor:rtsp,rts:$
+3:video/quicktime:QuickTime Movie:mov,qt,mqv:$
+4:video/x-msvideo:Video For Windows:avi,vfw:$
+5:video/msvideo:Video For Windows:avi,vfw:$
+6:video/avi:Video For Windows:avi,vfw:$
+7:video/flc:AutoDesk Animator:flc,fli,cel:$
+8:audio/x-wav:WAVE audio:wav,bwf:$
+9:audio/wav:WAVE audio:wav,bwf:$
+10:audio/aiff:AIFF audio:aiff,aif,aifc,cdda:$
+11:audio/x-aiff:AIFF audio:aiff,aif,aifc,cdda:$
+12:audio/basic:uLaw/AU audio:au,snd,ulw:$
+13:audio/mid:MIDI:mid,midi,smf,kar:$
+14:audio/x-midi:MIDI:mid,midi,smf,kar:$
+15:audio/midi:MIDI:mid,midi,smf,kar:$
+16:audio/vnd.qcelp:QUALCOMM PureVoice audio:qcp:$
+17:audio/x-gsm:GSM audio:gsm:$
+18:audio/AMR:AMR audio:AMR:$
+19:audio/aac:AAC audio:aac,adts:$
+20:audio/x-aac:AAC audio:aac,adts:$
+21:audio/x-caf:CAF audio:caf:$
+22:audio/ac3:AC3 audio:ac3:$
+23:audio/x-ac3:AC3 audio:ac3:$
+24:audio/vnd.qcelp:QUALCOMM PureVoice audio:qcp:$
+25:video/x-mpeg:MPEG media:mpeg,mpg,m1s,m1v,m1a,m75,m15,mp2,mpm,mpv,mpa:$
+26:video/mpeg:MPEG media:mpeg,mpg,m1s,m1v,m1a,m75,m15,mp2,mpm,mpv,mpa:$
+27:audio/mpeg:MPEG audio:mpeg,mpg,m1s,m1a,mp2,mpm,mpa,m2a:$
+28:audio/x-mpeg:MPEG audio:mpeg,mpg,m1s,m1a,mp2,mpm,mpa,m2a:$
+29:video/3gpp:3GPP media:3gp,3gpp:$
+30:audio/3gpp:3GPP media:3gp,3gpp:$
+31:video/3gpp2:3GPP2 media:3g2,3gp2:$
+32:audio/3gpp2:3GPP2 media:3g2,3gp2:$
+33:video/sd-video:SD video:sdv:$
+34:application/x-mpeg:AMC media:amc:$
+35:video/mp4:MPEG-4 media:mp4:$
+36:audio/mp4:MPEG-4 media:mp4:$
+37:audio/x-m4a:AAC audio:m4a:$
+38:audio/x-m4p:AAC audio:m4p:$
+39:audio/x-m4b:AAC audio book:m4b:$
+40:video/x-m4v:Video:m4v:$
+41:audio/mpeg:MP3 audio:mp3,swa:$
+42:audio/x-mpeg:MP3 audio:mp3,swa:$
+43:audio/mp3:MP3 audio:mp3,swa:$
+44:audio/x-mp3:MP3 audio:mp3,swa:$
+45:audio/mpeg3:MP3 audio:mp3,swa:$
+46:audio/x-mpeg3:MP3 audio:mp3,swa:$
+47:image/x-bmp:BMP image:bmp,dib:$
+48:image/x-macpaint:MacPaint image:pntg,pnt,mac:$
+49:image/pict:PICT image:pict,pic,pct:$
+50:image/x-pict:PICT image:pict,pic,pct:$
+51:image/png:PNG image:png:$
+52:image/x-png:PNG image:png:$
+53:image/x-quicktime:QuickTime image:qtif,qti:$
+54:image/x-sgi:SGI image:sgi,rgb:$
+55:image/x-targa:TGA image:targa,tga:$
+56:image/tiff:TIFF image:tif,tiff:$
+57:image/x-tiff:TIFF image:tif,tiff:$
+58:image/jp2:JPEG2000 image:jp2:$
+59:image/jpeg2000:JPEG2000 image:jp2:$
+60:image/jpeg2000-image:JPEG2000 image:jp2:$
+61:image/x-jpeg2000-image:JPEG2000 image:jp2:$
+JavaAppletPlugin.plugin:$
+/System/Library/Java/Support/CoreDeploy.bundle/Contents/JavaAppletPlugin.plugin:$
+14.0.3:$
+1308272440000:0:5:$
+Displays Java applet content, or a placeholder if Java is not installed.:$
+Java Applet Plug-in:$
+17
+0:application/x-java-vm-npruntime:Java applet::$
+1:application/x-java-applet;version=1.2:Java applet::$
+2:application/x-java-applet;version=1.3.1:Java applet::$
+3:application/x-java-applet;version=1.1.2:Java applet::$
+4:application/x-java-applet;version=1.2.1:Java applet::$
+5:application/x-java-applet;version=1.5:Java applet::$
+6:application/x-java-applet;version=1.4.2:Java applet::$
+7:application/x-java-applet;version=1.3:Java applet::$
+8:application/x-java-applet;version=1.1.1:Java applet::$
+9:application/x-java-applet;version=1.1:Java applet::$
+10:application/x-java-applet:Basic Java Applets:javaapplet:$
+11:application/x-java-vm:Java applet::$
+12:application/x-java-applet;version=1.1.3:Java applet::$
+13:application/x-java-applet;version=1.6:Java applet::$
+14:application/x-java-applet;jpi-version=1.6.0_24:Java applet::$
+15:application/x-java-applet;version=1.2.2:Java applet::$
+16:application/x-java-applet;version=1.4:Java applet::$
+WebEx64.plugin:$
+/Users/sjagtap/Library/Internet Plug-Ins/WebEx64.plugin:$
+1.0:$
+1321549221000:0:5:$
+WebEx64 General Plugin Container Version 202:$
+WebEx64 General Plugin Container:$
+1
+0:application/webx-gpc-plugin64:gpc::$
+DefaultPlugin.plugin:$
+/Applications/Firefox.app/Contents/MacOS/plugins/DefaultPlugin.plugin:$
+2.0:$
+1315002758000:0:5:$
+Gecko default plugin:$
+Default Plugin:$
+1
+0:*:All types:*:$

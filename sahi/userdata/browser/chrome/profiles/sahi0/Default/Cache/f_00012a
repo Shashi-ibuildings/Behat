@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://developers.facebook.com/schema/" class="no-js">
+<head><!--SAHI_INJECT_START-->
+<script>/*<![CDATA[*//*---->*/__sahiDebugStr__="";__sahiDebug__=function(s){__sahiDebugStr__+=(s+"\n");};/*--*//*]]>*/</script>
+<script src="/_s_/dyn/SessionState_domainfix/domainfix.js"></script>
+<script src='/_s_/spr/concat.js' id='_sahi_concat'></script>
+<script src='http://sahi.example.com/_s_/dyn/SessionState/state.js'></script>
+<script src='/_s_/spr/language_pack.js' id='langpack'></script>
+<script>/*<![CDATA[*//*---->*/_sahi.createCookie('sahisid', _sahi.sid);_sahi.loadXPathScript()/*--*//*]]>*/</script>
+<script>/*<![CDATA[*//*---->*/eval(_sahi.sendToServer("/_s_/dyn/Player_script/script.js"));/*--*//*]]>*/</script>
+<script src='/_s_/spr/playback.js'></script>
+<!--SAHI_INJECT_END-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=8,IE=9" >
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <link rel="apple-touch-icon" href="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/img/favicon.png" />
+  <link rel="icon" href="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/img/favicon.png" />
+
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+
+  <!-- loadstorm-25116 -->
+<title>ACNE - The Fashion House and Creative Collective from Sweden</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Shop and view the latest Womenswear, Menswear, Shoes and Accessories Collection from the official Acne website. Worldwide Shipping. " />
+<meta name="keywords" content="Acne, acne clothing, acne jeans, acne clothes, new collection Swedish designer, clothing, local acne store, shop online, jeans, shoes, boots, skinny jeans, sun glasses, jewelry, ready to wear, bag, designer, collections, pistol short, acne cardigan, acne blazer, acne skirt, limit, max, kex, roc, accessories, shop, hand bag, purse, wallet, mens designer jeans, swedish fashion, jonny johansson, mikael schiller, acne paper" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<meta name="google-site-verification" content="Fp9qbO3id5q8O8YOxw1leeT0M5MVCiNPLrXU2CR5WDg" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1"/>
+
+<meta property="fb:admins" content="689976824" />
+<link rel="icon" href="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/favicon.ico" type="image/x-icon" />
+
+
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://uat.acnestudios.com/js/blank.html';
+    var BLANK_IMG = 'http://uat.acnestudios.com/js/spacer.gif';
+//]]>
+</script>
+
+<script type="text/javascript">
+    var jsBaseUrl = 'http://uat.acnestudios.com/'; 
+    var skin_url = 'http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/js';
+</script>
+
+<link rel="stylesheet" type="text/css" href="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/css/styles.css?v=83fc6" media="all" />
+<link rel="stylesheet" type="text/css" href="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/css/iphone.css?v=83fc6" media="only screen and (max-device-width: 480px)" />
+<link rel="stylesheet" type="text/css" href="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/css/ipad.css?v=83fc6" media="only screen and (min-device-width: 768px) and (max-device-width: 1024px)" />
+<script type="text/javascript" src="http://uat.acnestudios.com/js/jquery/jquery-1.6.3.min.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/jquery/noconflict.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/jquery/jquery.easing.1.3.min.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/jquery/jquery.hoverIntent.min.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/jquery/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/jquery/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/jwplayer/jwplayer.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/prototype/prototype.min.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/prototype/validation.min.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/scriptaculous/builder.min.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/scriptaculous/effects-1.9.0.min.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/scriptaculous/dragdrop.min.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/scriptaculous/controls-1.9.0.min.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/scriptaculous/slider.min.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/varien/js.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/varien/form.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/varien/menu.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/js/modernizr2.min.js?v=83fc6"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/js/acne-placeholder.js?v=83fc6"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/js/videocontrols.js?v=83fc6"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/js/minicart.js?v=83fc6"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/js/navigation.js?v=83fc6"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/js/jquery.product-image-navigation.js?v=83fc6"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/js/acne.js?v=83fc6"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/js/jquery.placeholder-enhanced.min.js?v=83fc6"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/js/placeholder.js?v=83fc6"></script>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/css/ie8.css?v=83fc6" media="all" />
+<script type="text/javascript" src="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/js/html5.js?v=83fc6"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/js/jquery.ezmark.min.js?v=83fc6"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/js/ezmark.js?v=83fc6"></script>
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" href="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/css/ie9.css?v=83fc6" media="all" />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/css/ie7.css?v=83fc6" media="all" />
+<![endif]-->
+
+<link rel="stylesheet" media="screen and (max-width: 800px)" href="skin/frontend/enterprise/acnewhite/css/scaling.css" />
+<link rel="stylesheet" media="screen and (max-height: 600px)" href="skin/frontend/enterprise/acnewhite/css/scaling.css" /></head>
+<body class=" customer-account-logoutsuccess">
+<!-- ClickTale Top part -->
+<script type="text/javascript">
+var WRInitTime=(new Date()).getTime();
+</script>
+<!-- ClickTale end of Top part -->
+    <meter value="0" min="0" max="100" id="preload"></meter>
+<header>
+        <div class="content">
+        <div class='menu_top'>
+<div class="search">
+    <form action="/catalogsearch/result/">
+        <fieldset>
+            <input type="text" class="search" name="q" results="5" placeholder="SEARCH" />
+        </fieldset>
+    </form>
+</div>
+<!--{CART_SIDEBAR_6f178024704e91e59f27817f15f01dca}-->	
+		
+<div class="top-cart">
+
+        <div class="block-title no-items">
+        <span id="cartHeader">Shopping Bag (<span>0</span>)</span>
+    </div>
+    <div id="topCartContent" class="block-content" style="display:none">
+        <div class="inner-wrapper">                            <p class="block-subtitle">
+                <span class="close-btn">x</span>
+                Recently added items            </p>
+            <p class="cart-empty">
+                You have no items in your shopping cart.            </p>
+                        </div>
+    </div>
+<script type="text/javascript">
+    Enterprise.TopCart.initialize('topCartContent');
+    // Below can be used to show minicart after item added
+    // Enterprise.TopCart.showCart(7);
+</script>
+</div>
+<div id="controls">
+    <span id="sound" class="sound"><span>Sound On / Off</span></span>
+</div><!--/{CART_SIDEBAR_6f178024704e91e59f27817f15f01dca}--><!--{CATALOG_NAVIGATION_a108f5e18585faa75d80c194b2cf262d}--><script type='text/javascript'>
+(function($){
+    $(document).ready(function() {
+        $('#main_nav').css('display','none');
+		$('ul.nav > li').hover(function() {
+            var menu = $(this).attr('class');
+            $('nav ul.select').hide().parent().find('ul.' + menu).show();
+            $('nav').fadeIn();
+        });
+
+        $('header').mouseleave(function(e) {
+            $(this).find('nav').fadeOut();
+        });
+    });
+})(jQuery);
+</script>
+
+<ul class='nav'>
+    <li class='about'><a href="http://uat.acnestudios.com/">Acne Studios</a></li>
+    <li class='women'><a href="/shop/women.html">Shop Woman</a></li>
+    <li class='men'><a href="/shop/men.html">Shop Man</a></li>
+	<li class='collections'><a href="/collections/women/main_ss12/">Collections</a></li>   
+            </ul>
+
+<!--/{CATALOG_NAVIGATION_a108f5e18585faa75d80c194b2cf262d}--></div>
+        <nav id="main_nav">
+    <div>
+        <ul class="about select">
+            <li><span>Acne Studios</span></li>
+               <li><a href="http://www.acnepaper.com/" rel="external">Acne Paper</a></li>
+  <li><a href="/about/history">About</a></li>
+  <li><a href="/stores/store-locator">Stores</a></li>
+  <li><a href="/press/press-offices">Press</a></li>
+  <li><a href="/job-vacancies" target="_blank">Career</a></li>
+  <li><a href="/legal/legal">Legal</a></li>
+  <li><a href="/contact/contact-us">Contact</a></li>
+        </ul>
+
+                                <ul class="women select season">
+            <li><span>Women's Autumn/Winter 2011</span></li>
+                            <li><a href="http://uat.acnestudios.com/shop/women/aw11/accessories.html">Accessories</a></li>
+                            <li><a href="http://uat.acnestudios.com/shop/women/aw11/acne-paper.html">Acne Paper</a></li>
+                            <li><a href="http://uat.acnestudios.com/shop/women/aw11/coats-jackets.html">Coats & Jackets</a></li>
+                            <li><a href="http://uat.acnestudios.com/shop/women/aw11/dresses.html">Dresses</a></li>
+                            <li><a href="http://uat.acnestudios.com/shop/women/aw11/jeans.html">Jeans</a></li>
+                            <li><a href="http://uat.acnestudios.com/shop/women/aw11/knits.html">Knits</a></li>
+                            <li><a href="http://uat.acnestudios.com/shop/women/aw11/leather.html">Leather</a></li>
+                            <li><a href="http://uat.acnestudios.com/shop/women/aw11/skirts.html">Skirts</a></li>
+                            <li><a href="http://uat.acnestudios.com/shop/women/aw11/shoes.html">Shoes</a></li>
+                            <li><a href="http://uat.acnestudios.com/shop/women/aw11/suit-jackets.html">Suit Jackets</a></li>
+                            <li><a href="http://uat.acnestudios.com/shop/women/aw11/tops-blouses.html">Tops & Blouses</a></li>
+                            <li><a href="http://uat.acnestudios.com/shop/women/aw11/trousers.html">Trousers</a></li>
+                            <li><a href="http://uat.acnestudios.com/shop/women/aw11/acne-daniel-silver.html">Acne / Daniel Silver</a></li>
+                                    <li class="outlet"><a href="/outlet/outlet-women.html">Shop the outlet</a></li>
+                    </ul>
+                            <ul class="women select">
+            <li><span>Women's Resort S/S 2012</span></li>
+                            <li><a href="http://uat.acnestudios.com/shop/women/women-s-spring-2012/first-arrivals.html">First Arrivals</a></li>
+                                </ul>
+                            
+                                <ul class="men select season">
+            <li><span>Men's Autumn/Winter 2011</span></li>
+                        <li><a href="http://uat.acnestudios.com/shop/men/aw11/new-arrivals.html">New Arrivals</a></li>
+                        <li><a href="http://uat.acnestudios.com/shop/men/aw11/accessories.html">Accessories</a></li>
+                        <li><a href="http://uat.acnestudios.com/shop/men/aw11/acne-paper.html">Acne Paper</a></li>
+                        <li><a href="http://uat.acnestudios.com/shop/men/aw11/jeans.html">Jeans</a></li>
+                        <li><a href="http://uat.acnestudios.com/shop/men/aw11/leather.html">Leather</a></li>
+                        <li><a href="http://uat.acnestudios.com/shop/men/aw11/outerwear.html">Outerwear</a></li>
+                        <li><a href="http://uat.acnestudios.com/shop/men/aw11/shirts.html">Shirts</a></li>
+                        <li><a href="http://uat.acnestudios.com/shop/men/aw11/shoes.html">Shoes</a></li>
+                        <li><a href="http://uat.acnestudios.com/shop/men/aw11/suiting.html">Suiting</a></li>
+                        <li><a href="http://uat.acnestudios.com/shop/men/aw11/sweaters.html">Sweaters</a></li>
+                        <li><a href="http://uat.acnestudios.com/shop/men/aw11/tees-fleece.html">Tees and Fleece</a></li>
+                        <li><a href="http://uat.acnestudios.com/shop/men/aw11/trousers.html">Trousers</a></li>
+                                     <li class="outlet"><a href="/outlet/outlet-men.html">Shop the outlet</a></li>
+                    </ul>
+                            <ul class="men select">
+            <li><span>Men's Spring/Summer 2012</span></li>
+                        <li><a href="http://uat.acnestudios.com/shop/men/men-s-spring-2012/new-arrivals.html">First Arrivals</a></li>
+                                 </ul>
+                            
+        
+                <ul class="collections select">
+            <li><span>Women's Collections</span></li>
+                                            <li><a href="">Women Main AW11</a></li>
+                                                            <li><a href="">Women Pre AW11</a></li>
+                                                            <li><a href="">Women Pre SS12</a></li>
+                                                            <li><a href="">Women Main SS12</a></li>
+                                                            <li><a href="">Acne/Daniel Silver AW11</a></li>
+                                                                    <li class="title"><span>Men's Collections</span></li>
+                                            <li><a href="">Men AW 2011</a></li>
+                                                            <li><a href="">Men SS 2012</a></li>
+                                    </ul>
+
+        <ul class="bag">
+            <li><span>Shopping bag</span></li>
+                            <li><a href="/customer/account/login/">Log in or Sign up</a></li>
+                        <li><a href="/newsletter/subscriber/form" class="newsletter-subscription" rel="">Subscribe to newsletter</a></li>
+            <li><a href="/shopping-help/">Shopping help</a></li>
+            <li class="title">Shipping to</li>
+            <li><a href="/shipping-destination/">Germany </a></li>
+        </ul>
+    </div>
+</nav>
+    </div>
+</header>
+
+<div class="logo_container">
+	<div>
+		<a href="http://uat.acnestudios.com/">
+			<img src="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/img/logo_acne-large.png" alt="Acne" />
+		</a>
+	</div>
+</div>
+
+<div id="bodycontainer">
+
+
+  <div class="account">
+    <aside class="leftMenu">
+      <!--{VIEWED_PRODUCTS_bd1059132845b6c012af84368b74bbce}--><!--/{VIEWED_PRODUCTS_bd1059132845b6c012af84368b74bbce}-->    </aside>
+
+    <section class="column">
+      <!--{GLOBAL_MESSAGES_3e966cafdcb3f0c9cd9f8bc6a0021644}--><!--/{GLOBAL_MESSAGES_3e966cafdcb3f0c9cd9f8bc6a0021644}-->      
+<div id="logged_out">
+		<span class="loader">Loading</span>
+		<p>You have been successfully logged out and will be redirected to our homepage in 5 seconds.</p>
+</div>
+
+<script type="text/javascript">
+//<![CDATA[
+    setTimeout(function(){ location.href = 'http://uat.acnestudios.com/'},5000);
+//]]>
+</script>
+    </section>
+    <br class="clear" />
+  </div>
+</div>
+
+        <footer>	
+        <div class="content">
+		<form action="http://uat.acnestudios.com/newsletter/subscriber/new/" method="post" id="newsletter-validate-detail">
+    <div class="form-subscribe">
+	<a href="#" class="close">X</a>
+    <h2>Sign up for our newsletter</h2>
+        <ul id="newsletter-validate-errors"></ul>
+        <ul>
+			<li>
+            	<label for="firstname">First name</label>
+				<input name="firstname" type="text" id="firstname" class="input-text required-entry" />
+				<div></div>
+			</li>
+			<li>
+            	<label for="lastname">Last name</label>
+				<input name="lastname" type="text" id="lastname" class="input-text required-entry" />
+				<div></div>
+			</li>
+			<li>
+            	<label for="email">E-Mail</label>
+				<input name="email" type="text" id="email" class="input-text required-entry validate-email" />
+				<div></div>
+			</li>
+			<li>
+            	<label for="location">You're in</label>
+			<select name="location"><option  value="AX">Aland Islands </option>\r\n<option  value="AD">Andorra </option>\r\n<option  value="AR">Argentina </option>\r\n<option  value="AU">Australia </option>\r\n<option  value="AT">Austria </option>\r\n<option  value="BH">Bahrain </option>\r\n<option  value="BE">Belgium </option>\r\n<option  value="BR">Brazil </option>\r\n<option  value="VG">British Virgin Islands</option>\r\n<option  value="BG">Bulgaria </option>\r\n<option  value="CA">Canada </option>\r\n<option  value="CL">Chile </option>\r\n<option  value="CN">China </option>\r\n<option  value="HR">Croatia </option>\r\n<option  value="CY">Cyprus </option>\r\n<option  value="CZ">Czech Republic </option>\r\n<option  value="DK">Denmark </option>\r\n<option  value="EE">Estonia </option>\r\n<option  value="EU">Europe</option>\r\n<option  value="FO">Faroe Islands </option>\r\n<option  value="FI">Finland </option>\r\n<option  value="FR">France </option>\r\n<option  selected  value="DE">Germany </option>\r\n<option  value="GI">Gibraltar </option>\r\n<option  value="GR">Greece </option>\r\n<option  value="GL">Greenland </option>\r\n<option  value="GG">Guernsey </option>\r\n<option  value="VA">Holy See (Vatican City State) </option>\r\n<option  value="HK">Hong Kong </option>\r\n<option  value="HU">Hungary </option>\r\n<option  value="IS">Iceland </option>\r\n<option  value="IN">India </option>\r\n<option  value="IE">Ireland </option>\r\n<option  value="IL">Israel </option>\r\n<option  value="IT">Italy </option>\r\n<option  value="JP">Japan </option>\r\n<option  value="JE">Jersey </option>\r\n<option  value="KW">Kuwait </option>\r\n<option  value="LV">Latvia </option>\r\n<option  value="LI">Liechtenstein </option>\r\n<option  value="LT">Lithuania </option>\r\n<option  value="LU">Luxembourg </option>\r\n<option  value="MT">Malta </option>\r\n<option  value="MX">Mexico </option>\r\n<option  value="MC">Monaco </option>\r\n<option  value="NL">Netherlands </option>\r\n<option  value="NZ">New Zealand </option>\r\n<option  value="NO">Norway </option>\r\n<option  value="O1">Other Country</option>\r\n<option  value="PL">Poland </option>\r\n<option  value="PT">Portugal </option>\r\n<option  value="PR">Puerto Rico </option>\r\n<option  value="QA">Qatar </option>\r\n<option  value="RO">Romania </option>\r\n<option  value="RU">Russian Federation </option>\r\n<option  value="SA">Saudi Arabia </option>\r\n<option  value="SG">Singapore </option>\r\n<option  value="SK">Slovakia </option>\r\n<option  value="SI">Slovenia </option>\r\n<option  value="ZA">South Africa </option>\r\n<option  value="KR">South Korea </option>\r\n<option  value="ES">Spain </option>\r\n<option  value="SJ">Svalbard and Jan Mayen </option>\r\n<option  value="SE">Sweden </option>\r\n<option  value="CH">Switzerland </option>\r\n<option  value="TW">Taiwan </option>\r\n<option  value="TH">Thailand </option>\r\n<option  value="TR">Turkey </option>\r\n<option  value="AE">United Arab Emirates </option>\r\n<option  value="GB">United Kingdom </option>\r\n<option  value="US">United States </option>\r\n<option  value="VI">Virgin Islands</option>\r\n</select>			</li>
+		</ul>
+        <button type="submit" class="button" title="Subscribe"><span><span>Submit</span></span></button>
+    </div>
+</form>
+            <div class="information">
+                <a href="callto://+460855119400">Customer Service +46 (0) 855 119 400</a>            </div>
+            <nav>
+                <ul>
+                </ul>
+            </nav>
+        </div>
+    </footer>
+	<div id="popup-overlay"></div>
+    
+<!-- BEGIN GOOGLE ANALYTICS CODE -->
+<script type="text/javascript">
+//<![CDATA[
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+    })();
+
+    var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-649968-4']);
+_gaq.push(['_setDomainName', '.acnestudios.com']);
+_gaq.push(['_trackPageview']);
+
+//]]>
+</script>
+<!-- END GOOGLE ANALYTICS CODE -->
+
+    <!-- ClickTale Bottom part -->
+<div id="ClickTaleDiv" style="display: none;"></div>
+<script type="text/javascript">
+if(document.location.protocol!='https:')
+  document.write(unescape("%3Cscript src='http://s.clicktale.net/WRb.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+ClickTaleFetchFrom="http://uat.acnestudios.com/lib/ClickTale/ClickTaleCache.php?t=a9d90b8f3e3efe9359ad";
+if(typeof ClickTale=='function') ClickTale(49091,1,"www");
+</script>
+<!-- ClickTale end of Bottom part -->
+  </body>
+</html>

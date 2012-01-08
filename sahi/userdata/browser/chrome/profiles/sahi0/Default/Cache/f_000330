@@ -1,0 +1,1241 @@
+/*jshint prototypejs:true*/
+
+"use strict";
+
+// OUTFIT
+
+var fullview_image_animates = false;
+var outfit_num = 1, outfit_id;
+var product_num, product_amount;
+var thumb_active = 0;
+
+// This file is included from every page
+var $choosenRegionSelector = 0;
+
+if (typeof $j === 'undefined') {
+  var $j = jQuery.noConflict(); 
+}
+
+function saveValue() {
+    $choosenRegionSelector = $('choosenRegionSelector').selectedIndex;
+}
+
+var current_url = window.location.toString().replace('#','');
+if (current_url.indexOf('?') !== -1) {
+    current_url = current_url.split('?')[0];
+}
+
+if (typeof current_page === 'undefined') {
+	// current_page is sometimes set in template (catalog/product/list.phtml)
+	var current_page = current_url.split('/');
+	current_page = (current_page[current_page.length-1] === '') ? current_page[current_page.length-2] : current_page[current_page.length-1];
+	if (current_page.indexOf('.')) {
+            current_page = current_page.split('.')[0];
+        }
+}
+
+if (window.location === window.jsBaseUrl || window.location === 'http://www.acnestudios.com/') {
+    current_page = 'start';
+}
+
+var cartOutfolded = false;
+var browser_ver, mozilla, safari, opera, msie, mac;
+var win_width, win_height;
+
+function setFlwZoom(url){
+    //swfobject.embedSWF( skin_url + "/ImageZoom.swf", "zoom-tool", "43", "18", "10.0.0", false, {image:url}, {menu:'false',scale:'noscale',allowFullScreen:'true',wmode:'opaque'});
+}
+
+///////////////////////// BAZOOKA
+jQuery(function() {
+
+    /* Uncomment to enable menu with fullscreen video */
+	/*if(current_page == 'start') {
+	    var getFlashplayer;
+	    getFlashplayer = function(id) {
+	        return document[id]||window[id];
+	    };
+	
+	    jQuery('#HeaderMenu > ul > li').hover(function() {
+	        if (jQuery('.submenu-slideout', this).length !== 0) {
+	            getFlashplayer('background-player').stop();
+	        }
+	        jQuery('.submenu-slideout', this).stop().show().animate(
+	            {opacity:1},
+	            500,
+	            function() {
+	                getFlashplayer('background-player').play();
+	            }
+	        );
+	        jQuery(this).addClass('hover').siblings().addClass('unactive');
+	    }, function() {
+	        if(jQuery('.submenu-slideout', this).length !== 0) {
+	            getFlashplayer('background-player').stop();
+	        }
+	        jQuery('.submenu-slideout', this).stop().animate(
+	            {opacity:0},
+	            500,
+	            function() {
+	                jQuery( this ).hide();
+	                getFlashplayer('background-player').play();
+	            }
+	        );
+	        jQuery(this).removeClass('hover').siblings().removeClass('unactive');
+	    });
+	}*/
+
+    jQuery( '.submenu-slideout' ).css({opacity:0});
+
+
+
+
+/*
+    jQuery('#HeaderMenu > ul > li').hover(function() {
+        jQuery('.submenu-slideout', this)
+                .stop()
+                .show()
+                .animate( {opacity:1}, 300);
+        jQuery(this)
+                .addClass('hover')
+                .siblings().addClass('unactive');
+    }, function() {
+        jQuery('.submenu-slideout', this)
+                .stop()
+                .animate( {opacity:0}, 200, function() {
+                        $(this).hide();
+                });
+        jQuery(this).removeClass('hover').siblings().removeClass('unactive');
+    } );
+*/
+    
+    function submenuShow() {
+        jQuery('.submenu-slideout', this)
+                .stop()
+                .show()
+                .animate( {opacity:1}, 300);
+        jQuery(this)
+                .addClass('hover')
+                .siblings().addClass('unactive');
+    }
+
+    function submenuHide() {
+        jQuery('.submenu-slideout', this)
+            .stop()
+            .animate( {opacity:0}, 200, function() {
+                $(this).hide();
+            });
+        jQuery(this)
+            .removeClass('hover')
+            .siblings()
+            .removeClass('unactive');
+    }
+
+	var config = {    
+		sensitivity: 7, // number = sensitivity threshold (must be 1 or higher)
+		interval: 200,   // number = milliseconds of polling interval
+		over: submenuShow,  // function = onMouseOver callback (required)
+		timeout: 0,   // number = milliseconds delay before onMouseOut function call
+		out: submenuHide    // function = onMouseOut callback (required)
+	};
+	
+	jQuery("#HeaderMenu > ul > li").hoverIntent( config );
+
+
+
+    jQuery('#submenu').hover( function(){
+        jQuery('#submenu').data('over',true);
+    }, function(){
+        jQuery('#submenu').data('over',false);
+        jQuery('#HeaderMenu li:has(.submenu-slideout)').trigger('mouseout');
+    });
+
+    //jQuery('#refine-shopping-by *').show();
+
+    jQuery('.refine-selection').click(function() {
+      jQuery('#shopping-by-container').slideToggle();
+    }
+    );
+
+    jQuery('.share-button').click(function() { jQuery('#share').slideToggle(); return false; });
+    
+    jQuery('.product-vertical-link a').click(function() { jQuery(this).next().slideToggle(); });
+
+    jQuery('#products-grid-table .item').hover(function() {
+        jQuery( '.product-color', this ).css('visibility', 'visible');
+    },function() {
+        jQuery( '.product-color', this ).css('visibility', 'hidden');
+    });
+
+
+    if(jQuery('body.catalog-product-view #zoom-tool').length !== false ){
+        setFlwZoom(jQuery( '#zoom-tool' ).next().attr('longdesc'));
+    }
+
+});
+
+
+
+
+ function setImgLocation(inUrl){
+    window.open(inUrl);
+ }
+
+
+///////////////////////// BAZOOKA end
+
+function buttonWrapper(btn){
+    var wrap = function(btn) {
+        if (jQuery(btn).parents('.button-wrapper').length === 0) {
+            // before: <button><button> after: <div class="button-wrapper"><button><button></div>
+            jQuery(btn).wrap('<div class="button-wrapper"></div>');
+
+            // fix width for small buttons
+            if (jQuery(btn).hasClass('large') === false) {
+                jQuery(btn).css({'padding-left':0, 'padding-right':0});
+                if (jQuery(btn).css('width') === 'auto') {
+                    jQuery(btn).width(jQuery(btn).text().length*7+10);
+                }
+            }
+
+            if(jQuery(btn).hasClass('large')){
+                jQuery(btn).parent().height(jQuery(btn).css('height'));
+            }
+
+            var extra_width = 2;
+
+            // set width for .button-wrapper
+            var wrapper_width;
+            if (jQuery(btn).width() === 0) {
+                wrapper_width = parseInt(jQuery(btn).css('width'), 10);
+            } else {
+                wrapper_width = jQuery(btn).width() + extra_width;
+            }
+
+            jQuery(btn).parent().width(wrapper_width);
+            // fix a weird focus issue
+            jQuery('.button-wrapper:first').focus();
+
+            if (jQuery(btn).css('display') === 'none') {
+                jQuery(btn).parent().hide();
+            }
+        }
+    };
+
+    if (msie && browser_ver === 7) {
+        if (typeof btn === 'undefined') {
+            // all btns
+            jQuery('button:not(.no-wrap)').each(function(){ wrap(jQuery(this)); });
+        }else{
+            // specific btn
+            wrap(btn);
+        }
+    }
+}
+
+function showTransparentCanvas(level){
+    var z;
+    if (level === 'Level1') {
+        z = 200;
+    } else {
+        z = 210;
+    }
+
+    var canvas_height = jQuery('body').height()-122;
+
+    jQuery('body').append('<div class="transparent-canvas" id="'+level+'"></div>');
+    jQuery('.transparent-canvas#'+level)
+        .hide()
+        .css({'height': canvas_height+'px','opacity': 0.85, 'z-index': z})
+        .fadeIn(500);
+
+    jQuery(window).bind('resize', function(){
+        //alert('resize')
+    });
+}
+
+// invoked when page is loaded and every time a new outfit displays (from switchOutfit())
+function outfit(init){
+    // outfit product
+    jQuery('#Outfit .item')
+        .bind('mousemove', function(e){
+            if (jQuery(this).attr('title') !== '') {
+                jQuery(this).data('imagesrc', jQuery(this).attr('title'));
+                jQuery(this).removeAttr('title');
+            }
+            jQuery('h3', this).addClass('color');
+            product_num = Number(jQuery('#Outfit #Items .item').index(this));
+            
+            var l = (e.pageX - jQuery('#OutfitProductImage').width() -2);
+            var t = (e.pageY - jQuery('#OutfitProductImage').height()) -2;
+            
+            jQuery('#OutfitProductImage').css({
+                background:'url('+jQuery(this).data('imagesrc')+')',
+                left: l+'px',
+                top: t+'px'
+            }).show();
+        })
+        .bind('mouseout', function(){
+            jQuery('h3', this).removeClass('color');
+            jQuery('#OutfitProductImage').hide();
+        });
+        
+	jQuery('#OutfitProductImage').prependTo('body');
+
+    // outfits navigation (thumbs)
+    if(init){
+        jQuery('#OutfitThumbs .thumb').each(function(){ jQuery(this).prepend('<div class="overlay"></div>'); });
+        jQuery('#OutfitThumbs .thumb:first .overlay').hide();
+
+        jQuery('#OutfitClick .thumb').each(function(i){
+            jQuery(this)
+                .bind('mouseover', {index:i}, function(e){ jQuery('.overlay:eq('+e.data.index+')').hide(); })
+                .bind('mouseout', {index:i}, function(e) {
+                    if (window.thumb_active !== e.data.index) {
+                        jQuery('.overlay:eq('+e.data.index+')').show();
+                    }
+                }).bind('click', {index:i}, function(e){ window.switchOutfit(jQuery(this).parent().next().find('.thumb:eq('+e.data.index+')')); });
+        });
+    }
+
+    // thumbnails container height
+    var thumb_amount = jQuery('#OutfitThumbs .thumb').length;
+
+    // outfit navigation (left/right)
+    jQuery('#OutfitAmount').text(thumb_amount);
+    jQuery('#OutfitNavArrows a').css({'opacity':'1', 'cursor':'pointer'});
+    if (msie && (browser_ver === 8)) {
+        jQuery('#OutfitNavArrows a:eq(0), #OutfitNavArrows a:eq(1)').show();
+    }
+
+    jQuery('#OutfitNavArrows a:eq(0)')
+        .mouseover(function() {
+            jQuery(this).addClass('color');
+        }).mouseout(function() {
+            jQuery(this).removeClass('color');
+        }).click(function() {
+            var prev_num = Number(jQuery('#CurrentOutfitNum').text())-1;
+            window.switchOutfit(jQuery('#OutfitThumbs .thumb:eq('+(prev_num-1)+')'));
+        });
+
+    jQuery('#OutfitNavArrows a:eq(1)')
+        .mouseover(function(){ jQuery(this).addClass('color'); }).mouseout(function(){ jQuery(this).removeClass('color'); })
+        .click(function(){
+            var next_num = Number(jQuery('#CurrentOutfitNum').text())+1;
+            window.switchOutfit(jQuery('#OutfitThumbs .thumb:eq('+(next_num-1)+')'));
+        });
+
+    if (outfit_num === 1) {
+        jQuery('#OutfitNavArrows a:eq(0)').css({'opacity':'0', 'cursor':'default'}).unbind('click');
+        if (msie && (browser_ver === 8)) {
+            jQuery('#OutfitNavArrows a:eq(0)').hide();
+        }
+    }
+    if (outfit_num === thumb_amount) {
+        jQuery('#OutfitNavArrows a:eq(1)').css({'opacity':'0', 'cursor':'default'}).unbind('click');
+        if (msie && (browser_ver === 8)) {
+            jQuery('#OutfitNavArrows a:eq(1)').hide();
+        }
+    }
+
+    // "shop this item" button
+    jQuery('button.btn-popup').click(function(){
+        showTransparentCanvas('Level1');
+        window.showLargePopup();
+    });
+
+    // zoom outfit
+    setFlwZoom(jQuery('#Outfit #OutfitImageFrontZoom').val());
+}
+
+// obj_outfit = #OutfitThumbs .thumb
+function switchOutfit(obj_outfit){
+
+
+    if ( !window.fullview_image_animates) {
+
+        outfit_id = jQuery('.outfit-id', obj_outfit).val();
+        outfit_num = jQuery('.outfit-num', obj_outfit).val();
+        product_amount = jQuery('.product', obj_outfit).length;
+
+        var outfit_image_front = jQuery('.outfit-image-front', obj_outfit).val();
+        var outfit_image_front_zoom = jQuery('.outfit-image-front-zoom', obj_outfit).val();
+
+        // navigation thumbs
+        jQuery('.overlay:eq('+thumb_active+')').show().data('visable', true);
+        thumb_active = (outfit_num-1);
+        jQuery('.overlay:eq('+thumb_active+')').hide();
+
+        // change outfit image and zoom images
+        jQuery('#Outfit #OutfitImageFront').attr('value', outfit_image_front);
+        jQuery('#Outfit #OutfitImageFrontZoom').attr('value', outfit_image_front_zoom);
+
+        // clone big image and put copy under original
+        jQuery('.outfit-image')
+            .clone(true)
+            .insertBefore(jQuery('#Outfit .outfit-image'))
+            .addClass('copy')
+            .css('background-image', 'url('+outfit_image_front+')');
+
+        // lock zoom until fade is completed
+        fullview_image_animates = true;
+
+        // outfit counter
+        jQuery('#CurrentOutfitNum').text(outfit_num);
+
+        // add new outfit items
+        jQuery('#Outfit #Items .item').remove();
+
+        for (var i = 0; i < product_amount; ++i) {
+            var name = jQuery('.product:eq('+i+') .product-name', obj_outfit).val();
+            var productUrl = jQuery('.product:eq('+i+') .product-url', obj_outfit).val();
+            var type = jQuery('.product:eq('+i+') .product-type', obj_outfit).val();
+            var image = jQuery('.product:eq('+i+') .product-image-small', obj_outfit).val();
+            var price = jQuery('.product:eq('+i+') .product-price', obj_outfit).val();
+
+            var new_items_html = '<div class="item" title="'+image+'">';
+            new_items_html += '<a href="javascript:loadProduct(\''+productUrl+'\', '+i+')"><h3>'+name+'</h3></a>';
+            new_items_html += '<h4>'+type+' / '+price+' '+window.currency+'</h4>';
+            new_items_html += '<button type="button" onClick="loadProduct(\''+productUrl+'\', '+i+')" class="btn-popup">shop this item</button>';
+            new_items_html += '</div>';
+
+            jQuery('#Outfit #Items').append(new_items_html);
+
+            jQuery('#Outfit #Items .item:eq('+i+') h3').text(name);
+            jQuery('#Outfit #Items .item:eq('+i+') .type').text(type);
+            jQuery('#Outfit #Items .item:eq('+i+') .price').text(price);
+        }
+
+        buttonWrapper();
+
+        // switch big image, fadeout/delete original
+        jQuery('.outfit-image:not(.copy)').fadeOut(1000, function(){
+            jQuery(this).remove();
+            // remove class "copy" from copy
+            jQuery('.outfit-image.copy').removeClass('copy');
+
+            window.fullview_image_animates = false;
+            outfit();
+        });
+    }
+}
+
+/* FLAP
+create flap like this:
+<ul id="Flap">
+    <li>[menu name]</li>
+    <li>[menu name]</li>
+</ul>
+<div class="[container name] [menu name]"></div>
+<div class="[container name] [menu name]"></div>
+<script> flap(jQuery('.[container name]')) </script>
+*/
+function flap(contentClass){
+    window.$ul = jQuery('#Flap');
+    //$ul.wrap('<div id="Flap-Wrapper"></div>');
+    window.$ul.show();
+    jQuery(contentClass).hide();
+
+    //if(mozilla && mac) jQuery('li', $ul).css({'height':'11px', 'padding-top':'2px'}) // style-fix mac/ff
+
+    var addSquares = function(li) {
+        jQuery('#Flap').find('li').each(function(){
+            jQuery('.pre', this).html('&nbsp;');
+            jQuery('.post', this).html('&nbsp;');
+        });
+        jQuery('.pre', li).html('&#9642;');
+        jQuery('.post', li).html('&#9642;');
+    };
+
+    var li_width = 0;
+
+    jQuery('li', window.$ul)
+        .each(function(){
+            // save navigation name
+            jQuery(this).data('name', jQuery(this).text());
+            // save name for content class
+            var class_name = jQuery(this).text().replace(/ \(\d*\)/,'').toLowerCase();
+            class_name = class_name.replace(/ /g,'-');
+            jQuery(this).data('class_name', class_name);
+
+            if (msie && browser_ver === 7) {
+                // fix name
+                class_name = class_name.substring(0, class_name.length-1);
+                jQuery(this).data('class_name', class_name);
+            }
+            // add spaces
+            jQuery(this).html('<div class="pre">&nbsp;</div><div class="flap-title">'+jQuery(this).text()+'</div><div class="post">&nbsp;</div>');
+            if (mozilla && !mac) {
+                jQuery('.pre, .post', this).css('margin-top','-1px');
+            }
+            li_width += (jQuery(this).width() + parseInt(jQuery(this).css('margin-right'), 10));
+        })
+        .bind('click', function(){
+            var body_height = jQuery('body').height();
+            contentClass.hide();
+             jQuery('body').height(body_height);
+            jQuery('.'+jQuery(this).data('class_name')).fadeIn();
+            // set class
+            jQuery('li', window.$ul).removeClass('flap-active');
+            jQuery(this).addClass('flap-active');
+            addSquares(jQuery(this));
+            return false;
+        });
+
+    jQuery('li', window.$ul).filter(':first').addClass('flap-active');
+    jQuery('li', window.$ul).filter(':last').css('margin-right','0px');
+
+    // center flap lists
+    var ul_inner_margin = (window.$ul.width()-li_width)/2+'px';
+    jQuery('li', window.$ul).filter(':first').css('margin-left', ul_inner_margin);
+    jQuery('li', window.$ul).filter(':last').css('margin-right', ul_inner_margin);
+
+    jQuery('.'+jQuery('#Flap li:first').data('class_name')).show();
+
+    addSquares(jQuery('li:first', window.$ul));
+}
+
+function shopStart(){
+
+    var image_amount = jQuery('#ShopStartHeader img').length;
+    var html_btn = '';
+    for (var i = 0; i < image_amount; ++i) {
+        html_btn += '<div class="btn">' + (i + 1) + '</div>';
+    }
+    jQuery('#ShopStartHeader').prepend('<div id="ShopStartHeaderNav">'+html_btn+'</div>');
+
+    // save data and remove imgs
+    var shop_start_src = [], shop_start_link = [];
+    jQuery('#ShopStartHeader img').each(function(){
+        shop_start_src.push(jQuery(this).attr('src'));
+        if (typeof jQuery(this).attr('longdesc') !== 'undefined') {
+            shop_start_link.push(jQuery(this).attr('longdesc'));
+        } else {
+            shop_start_link.push('');
+        }
+        jQuery(this).remove();
+    });
+
+    var clickShopStartHeader = function(num) {
+        if (typeof current_btn_no === 'undefined') {
+            window.current_btn_no = 100;
+        }
+        if (typeof num === 'undefined') {
+            num = (window.current_btn_no+1);
+        }
+        if (num === image_amount) {
+            num = 0;
+        }
+        jQuery('#ShopStartHeader').css('background-image', 'url('+shop_start_src[num]+')');
+        jQuery('#ShopStartHeaderNav .btn:eq('+num+')').addClass('current');
+        jQuery('#ShopStartHeaderNav .btn:eq('+(window.current_btn_no)+')').removeClass('current');
+        // mouse pointer
+        /*if(shop_start_link[num].indexOf('http') != -1) jQuery('#ShopStartHeader').css('cursor', 'pointer')
+
+        else jQuery('#ShopStartHeader').css('cursor', 'default');*/
+
+        window.current_btn_no = num;
+    };
+
+    // click nav
+    var current_btn_no;
+    var mouseovernav = false;
+    // only one image - hide navigation
+    if (jQuery('#ShopStartHeaderNav .btn').size() === 1) {
+        jQuery('#ShopStartHeaderNav').hide();
+    }
+    jQuery('#ShopStartHeaderNav .btn').click(function(){
+        var index = jQuery(this).parent().children().index(this);
+        clickShopStartHeader(index);
+    }).mouseover(function() {
+        mouseovernav = true;
+    }).mouseout(function() {
+        mouseovernav = false;
+    });
+    var shop_start_interval;
+    jQuery('#ShopStartHeaderNav').mouseover(function() {
+        clearInterval(shop_start_interval);
+    }).mouseout(function() {
+        shop_start_interval = setInterval(function() {
+            clickShopStartHeader();
+        }, 5000);
+    });
+
+    if (mozilla && mac) {
+        jQuery('#ShopStartHeaderNav .btn').css({'height':'10px', 'padding-top':'1px'});
+    }
+
+    // auto-switch every 5 sek
+    shop_start_interval = setInterval(function() {
+        clickShopStartHeader();
+    }, 5000);
+
+    clickShopStartHeader(0);
+
+
+    // click background
+    jQuery('#ShopStartHeader').click(function(){
+        if ( !mouseovernav && (shop_start_link[current_btn_no].indexOf('http') !== -1)) {
+            window.location = shop_start_link[current_btn_no];
+        }
+    });
+
+    // shop start menu
+    flap(jQuery('.shop-start-content'));
+
+    // content items
+    jQuery('.shop-start-content .item .name').wrap('<div class="name-wrapper"></div>');
+    jQuery('.shop-start-content .name-wrapper')
+        .prepend('<div class="chr">&#9642;</div>')
+        .append('<div class="chr">&#9642;</div><br style="clear:both">');
+
+    jQuery('.shop-start-content').each(function(){
+
+        var item_num = 0, item_row = 0, item_highestImageHeight = 0;
+        jQuery('.item', this).each(function(){
+
+            // first item in row
+            if (Number(parseInt(item_num / 4, 10)) === Number(item_row)) {
+                jQuery(this).css({'margin-left':'0px', 'clear':'left'});
+                item_row ++;
+            }
+
+            var imageHeight = parseInt(jQuery('.image', this).css('height'), 10);
+            jQuery(this).css('height', imageHeight+63+'px');
+
+            jQuery(this).addClass('row_'+item_row);
+
+            // check highest image height in current row
+            if (jQuery('.image', this).height() > item_highestImageHeight) {
+                item_highestImageHeight = jQuery('.image', this).height();
+            }
+
+            // last item in row
+            if ((Number(item_num / 4).toString().indexOf('.75') !== -1) || ($(this).next() === null)) {
+                // loop through each image in current row and check if it need to have any top margin
+                jQuery(this).parent().find('.row_'+item_row+' .image').each(function(){
+                    var imageMarginTop = (item_highestImageHeight > 0) ? item_highestImageHeight-jQuery(this).height() : 0;
+                    if(imageMarginTop > 0){
+                        jQuery(this).css('margin-top', imageMarginTop+'px');
+                        // add the extra top margin to parent div (.item)
+                        jQuery(this).parent().css('height', jQuery(this).parent().height()+imageMarginTop+'px');
+                    }
+                });
+                item_highestImageHeight = 0;
+            }
+
+            item_num ++;
+        }).click(function(){
+            window.location = jQuery(this).attr('title');
+        }).mouseover(function(){
+            jQuery('.name-wrapper *', this).addClass('color');
+        }).mouseout(function(){
+            jQuery('.name-wrapper *', this).removeClass('color');
+        });
+    });
+}
+
+// CATEGORY OVERVIEW
+
+function categoryOverview(){
+
+    // content items
+    jQuery('.products-grid .item .name').wrap('<div class="name-wrapper"></div>');
+    jQuery('.products-grid .name-wrapper')
+        .prepend('<div class="chr">&#9642;</div>')
+        .append('<div class="chr">&#9642;</div><br style="clear:both">');
+
+    jQuery('.products-grid').each(function(){
+
+        var item_num = 0, item_row = 0;
+        jQuery('.item', this).mouseover(function(){
+            jQuery('.name-wrapper *', this).addClass('color');
+        }).mouseout(function(){
+            jQuery('.name-wrapper *', this).removeClass('color');
+        });
+    });
+}
+
+function cartDrop(dir){
+    var cart_height = jQuery('.block-cart').height() + 30;
+
+    if (dir === 'down') {
+        cartOutfolded = true;
+        jQuery('#ShoppingCartLink').attr('href','#');
+        jQuery('.block-cart')
+            .show()
+            .css('top','-'+cart_height+'px')
+            .animate({ 'top':'0px' }, 1000, 'easeOutQuart', function(){
+                if (msie && browser_ver === 7) {
+                    buttonWrapper(jQuery('#CartFooter button'));
+                }
+            });
+
+        jQuery(document).bind('click', function(e){
+            if (jQuery(e.target).parents('.block-cart').length === 0) {
+                cartDrop('up');
+            }
+        });
+
+        if (jQuery('#CartSum').text() === '') {
+            // empty shopping bag
+            jQuery('#Bag').text(0);
+            jQuery('#CheckoutBtn').hide();
+            if (msie && (browser_ver === 7)) {
+                jQuery('#HeaderMenuRight .button-wrapper').hide();
+            }
+        } else {
+            // items in shopping bag
+            jQuery('#Bag').text(jQuery('#CartQty').val());
+            jQuery('#CheckoutBtn').show();
+            if (msie && (browser_ver === 7)) {
+                jQuery('#HeaderMenuRight .button-wrapper').show();
+            }
+        }
+
+
+    } else if (dir === 'up') {
+        cartOutfolded = false;
+        jQuery('.block-cart').stop().animate({'top':'-'+cart_height+'px'}, {duration: 1500, easing: 'easeOutQuart'});
+    }
+}
+
+jQuery('document').ready(function(){
+
+    if (typeof $j.browser.msie === 'undefined') {
+        jQuery('#BodyContent').fadeIn(1000);
+    }
+
+    win_width = jQuery(window).width();
+    win_height = jQuery(window).height();
+
+    // BROWSER SETTINGS
+    if (typeof $j.browser.version !== 'undefined') {
+        browser_ver = $j.browser.version;
+    }
+    if (typeof $j.browser.mozilla !== 'undefined') {
+        mozilla = true;
+    }
+    if (typeof $j.browser.safari !== 'undefined') {
+        safari = true;
+    }
+    if (typeof $j.browser.opera !== 'undefined') {
+        opera = true;
+    }
+    if (typeof $j.browser.msie !== 'undefined') {
+        msie = true;
+    }
+    if (navigator.userAgent.indexOf('Macintosh') !== -1) {
+        mac = true;
+    }
+
+    // CALL SCRIPT IF SPECIFIC PAGE
+    // (current_page is sometimes set in template)
+    switch(current_page){
+        case 'men': shopStart(); break;
+        case 'outlet-men': shopStart(); break;
+        case 'women': shopStart(); break;
+        case 'outlet-women': shopStart(); break;
+        case 'object-shop': shopStart(); break;
+        case 'category_overview': categoryOverview(); break;
+        case 'start':
+            if (msie && (parseFloat(browser_ver) < 7)) {
+                window.alert('YOU ARE USING AN OUTDATED WEB BROWSER\n' +
+                    'This website is not optimized for Internet Explorer ' +
+                    browser_ver + ' and you will not be able to use certain functions.\n' +
+                    'For a better experience on this and all other websites - ' +
+                    'please upgrade your browser.');
+            }
+            break;
+    }
+
+    if (current_url.indexOf('/outfits/') !== -1){
+        product_amount = jQuery('#OutfitThumbs .thumb:first .product').length;
+        // set first outfit image
+        jQuery('#Outfit .outfit-image').css('background-image', 'url('+jQuery('#OutfitImageFront').val()+')');
+
+        window.outfit(true);
+        buttonWrapper(jQuery('#AddToBag'));
+    }
+
+    //______________________________
+
+    // BUTTONS
+    // remove <span> from <button>
+    jQuery('button span').each(function(){
+        var button_text = jQuery(this).text();
+        jQuery(this).parent().html(button_text);
+    });
+
+    buttonWrapper();
+
+    // LINKS
+    // add mouseover-arrow-space
+    jQuery('.menu-link').each(function(){ jQuery(this).html('<span class="link-prefix"></span>'+jQuery(this).html()); });
+    // reset left-margin
+    jQuery('.menu-link, .passive-link').css('margin-left', 0);
+    jQuery('.sub-menu .menu-link, .sub-menu .passive-link').css('margin-left','3px');
+
+    // hover
+    /*jQuery('a').hover(
+        function(){jQuery('.link-prefix', this).html('&raquo;&nbsp;')},
+        function(){jQuery('.link-prefix', this).html('')}
+    )*/
+
+    // CHECKBOX
+    jQuery('input:checkbox ~ label').css({'clear':'none', 'display':'inline'});
+
+    // SEARCH FIELD
+    jQuery('#search_mini_form #search')
+        .focus(function(){
+            jQuery(this).addClass('focus');
+        })
+        .blur(function(){
+            jQuery(this).val('SEARCH');
+            jQuery(this).removeClass('focus');
+        });
+
+
+/*
+    jQuery('#search_mini_form #search').each(function(){
+        if(mozilla && mac) jQuery(this).css({'padding-top':'0px'});
+        if(mozilla && !mac) jQuery(this).css({'padding-top':'2px'});
+        if(safari && !mac) jQuery(this).css({'line-height':'17px'});
+    });
+*/
+
+    //margin: 3px 0 0 0; padding: 1px 1px 0 1px;
+
+
+    // Remove validation-failure
+    jQuery('input').change(function(){
+        var elm_id = jQuery(this).attr('id');
+        jQuery('label[for="'+elm_id+'"]').css('color','black');
+        jQuery('#advice-required-entry-'+elm_id).remove();
+        jQuery(this).removeClass('validation-failed');
+    });
+
+    // MY CART (dropdown)
+    window.$cartLink = jQuery('#ShoppingCartLink');
+    window.$cartLink.bind('click', function(){
+        if (!cartOutfolded) {
+            cartDrop('down');
+        } else {
+            cartDrop('up');
+        }
+        return false;
+    });
+
+    // PRICE (split class .price)
+    //jQuery('.price').each(function(){ priceFormat(jQuery(this), 'small'); });
+});
+
+
+
+
+// MISC FUNCTIONS ___________________________________________________________________________
+
+function priceFormat(obj, size){
+    var fullprice = jQuery(obj).text();
+    for (var i = 0; i < fullprice.length; ++i) {
+        if (isNaN(fullprice.charAt(i)) && (fullprice.charAt(i) !== ',')) {
+            var price = fullprice.substring(0,i).replace(',','');
+            var currency = fullprice.substring(i);
+            if (size === '10-10') {
+                jQuery(obj).html('<span style="font-size:10px">'+price+'</span>&nbsp;<span style="font-size:10px">'+currency+'</span>');
+            }
+            if (size === '14-10') {
+                jQuery(obj).html('<span style="font-size:14px">'+price+'</span>&nbsp;<span style="font-size:10px">'+currency+'</span>');
+            }
+            break;
+        }
+
+    }
+}
+
+
+
+
+// large popup
+var large_popup_is_set = false;
+function showLargePopup() {
+    if(!large_popup_is_set){
+        jQuery('#PopupLarge').appendTo('body').show();
+        large_popup_is_set = true;
+    }else{
+        jQuery('#PopupLarge').show();
+    }
+
+    var popup_left = (jQuery(window).width()/2) - (jQuery('#PopupLarge').outerWidth()/2);
+    jQuery('#PopupLarge').css('left', popup_left+'px');
+
+/*
+    var popup_outfit_obj = jQuery('#OutfitThumbs .thumb:eq('+(Number(outfit_num)-1)+')');
+    var popup_product_obj = jQuery('.product:eq('+product_num+')', popup_outfit_obj);
+
+    var popup_product_image_large = jQuery('.product-image-large', popup_product_obj).val();
+    var popup_product_name = jQuery('.product-name', popup_product_obj).val();
+    var popup_product_price = jQuery('.product-price', popup_product_obj).val();
+    var popup_product_description = jQuery('.product-description-short', popup_product_obj).val();
+    var popup_product_image_amount = jQuery('.product-images .product-image', popup_product_obj).length;
+
+    jQuery('#ImageLarge').css('background','url('+popup_product_image_large+')')
+    jQuery('#ProductData h1:first').text(popup_product_name);
+
+    jQuery('#ProductData h1:last').text(popup_product_price);
+    jQuery('#ProductData #ProductDescription').text(popup_product_description);
+
+    // product images
+    jQuery('#ImageBar .image').remove();
+    var image_height = 80;
+    for(i=0; i<popup_product_image_amount; i++){
+        var popup_product_image = jQuery('.product-images .product-image:eq('+i+')', popup_product_obj).val();
+        jQuery('#ImageBar').append('<div class="image" style="background:url('+popup_product_image+'); bottom:'+(image_height*i)+'px;"></div>');
+        jQuery('#ImageBar .image:eq('+i+')').bind('mouseover', {index:i}, function(e){
+            var image = jQuery('.product-images .product-image-large:eq('+e.data.index+')', popup_product_obj).val();
+            jQuery('#ImageLarge').css('background','url('+image+')')
+        })
+    }
+*/
+
+
+}
+
+function nextProductItem(){
+    if (product_num < (product_amount-1)) {
+        product_num++;
+    } else {
+        product_num = 0;
+    }
+    showLargePopup();
+}
+
+function showClose(id) {
+    jQuery('#'+id).show();
+    jQuery('#'+id+'Link').hide();
+}
+
+function ZoomTooltip(txt){ jQuery('#ZoomTooltip').show().html(txt); }
+
+function closeTransparentCanvas(id) {
+    jQuery('.transparent-canvas#' + id).fadeOut(300, function() {
+        jQuery(this).remove();
+    });
+}
+
+var codeToRun = "";
+var contentToFill = "";
+
+function showBigImage(image) {
+    var mainImage = document.getElementById("mainImage");
+    mainImage.src = image;
+}
+
+function changeImage(url, zoom_url) {
+
+	document.getElementById("mainImage").src = url;
+    jQuery('#mainImage2').fadeOut( 450, 'easeOutCubic', function(){
+        jQuery(this).attr('src', jQuery('#mainImage').attr('src')).show();
+        if (zoom_url) {
+            setFlwZoom(zoom_url);
+        }
+    } );
+
+}
+
+function hideColorNotAvailable() {
+    jQuery("#noColorMessage").hide();
+}
+
+function selectColor(color, bigImage, fullviewImage, selectBoxed) {
+    var holder = document.getElementById("colorHolder_" + color);
+    var imageContainer = document.getElementById("itemDetailImageList");
+    var colorNameHolder = document.getElementById("colorNameHolder");
+
+    var colorImage;
+    if (window.lastColor !== null) {
+        colorImage = document.getElementById("colorName_" + window.lastColor);
+        if (colorImage !== null) {
+            colorImage.style.cssText = "border: 2px solid transparent !important";
+        }
+    }
+
+    colorImage = document.getElementById("colorName_"+color);
+
+    if (colorImage !== null) {
+        colorImage.style.cssText = "border: 2px solid #723570 !important";
+    }
+    //jQuery(colorImage).css('cssText', '2px solid #723570 !important');
+
+    //imageContainer.innerHTML = holder.innerHTML;
+    //if(colorNameHolder != null)
+    //  colorNameHolder.innerHTML = "("+color.toUpperCase()+")";
+
+    if (bigImage !== '') {
+        changeImage(bigImage, fullviewImage);
+        hideColorNotAvailable();
+    } else {
+        showBigImage(document.getElementById("styleImage").innerHTML);
+        //showColorNotAvailable();
+    }
+
+    for (var i = 0; i < document.addToCart.attribute509.options.length; ++i) {
+        if (document.addToCart.attribute509.options[i].text === color) {
+            document.addToCart.attribute509.selectedIndex = i;
+        }
+    }
+    if( !selectBoxed ){
+        jQuery("#attribute509").trigger('change');//bazooka
+    }
+
+    // if size droplist does not exist, don't bother
+    if (jQuery("#attribute508").html() !== null) {
+        jQuery("#attribute508").removeAttr('disabled');
+        window.spConfig.fillSelect(window.spConfig.settings[1]);
+    }
+
+    if (jQuery("#itemDetailImageList ul li:first a").attr("href") !== null) {
+        eval(jQuery("#itemDetailImageList ul li:first a").attr("href").substr(11));
+    }
+
+    jQuery("#clearSelectionLink").show();
+    window.lastColor = color;
+}
+
+function changeList(id) {
+    jQuery('#itemsLeft').html('');
+    if (id === 'attribute509') {
+        var d = document.getElementById(id);
+        var i = d.selectedIndex;
+        if (window.prodColors[d.options[i].innerHTML] === null) {
+            selectColor( d.options[i].innerHTML, "", "", true ); // Bazooka
+        } else {
+            selectColor( d.options[i].innerHTML, window.prodColors[d.options[i].innerHTML].big, window.prodColors[d.options[i].innerHTML].full, true ); // Bazooka
+        }
+    }
+}
+
+
+function loadProduct(url, num, return_url) {
+    jQuery('#PopupLarge').html('<img class="outfitLoader" src="'+window.jsBaseUrl+"skin/frontend/enterprise/acne2011/images/product-loader.gif\" />");
+    if (typeof return_url === 'undefined') {
+        return_url = "";
+    } else {
+        return_url = "&return_url="+window.escape(return_url);
+    }
+    new Ajax.Request(url+"&skipColumn=true"+return_url,
+    {
+        method:'get',
+        onSuccess: function(transport){
+            var response = transport.responseText || "no response text";
+            contentToFill = response;
+
+            var script0 = 'document.getElementById("PopupLarge").innerHTML = \'<div style="position: absolute; right: 10px; top: 10px;" id=\"Close\"><a href=\"#\" onclick=\"closeTransparentCanvas(\\\'Level1\\\'); jQuery(\\\'#PopupLarge\\\').hide(); return false\">close [x]</a></div><div style="position:absolute;left:332px;top:8px;z-index:1"><a href=\"#\" onclick=\"closeTransparentCanvas(\\\'Level1\\\'); jQuery(\\\'#PopupLarge\\\').hide(); return false\"><span style=\"font-size:14px\">&laquo;</span> back to outfit</a> / <a href=\"#\" onClick=\"nextOutfitItem('+num+')\">next item</a> <span style=\"font-size:14px\">&raquo;</span></div>\'+contentToFill.substring(contentToFill.search("<!-- Product Info Container -->"), contentToFill.search("<!-- Close Product Info Container -->"));';
+            showLargePopup();
+
+            var script1 = "";
+            if (response.search("//start_code_1") > 0) {
+                script1 = response.substring(response.search("//start_code_1")+("//start_code_1").length, response.search("//end_code_1"));
+            }
+
+            var script2 = "";
+            if (response.search("//start_code_2") > 0) {
+                script2 = response.substring(response.search("//start_code_2")+("//start_code_2").length, response.search("//end_code_2"));
+            }
+
+            var script3 = "";
+            if (response.search("//start_code_3") > 0) {
+                script3 = response.substring(response.search("//start_code_3")+("//start_code_3").length, response.search("//end_code_3"));
+            }
+
+            var script4 = "";
+            if (response.search("//start_code_4") > 0) {
+                script4 = response.substring(response.search("//start_code_4")+("//start_code_4").length, response.search("//end_code_4"));
+            }
+
+            var script5 = "";
+            if (response.search("//start_code_5") > 0) {
+                script5 = response.substring(response.search("//start_code_5")+("//start_code_5").length, response.search("//end_code_5"));
+            }
+
+            var script6 = "";
+            if (response.search("//start_code_6") > 0) {
+                script6 = response.substring(response.search("//start_code_6")+("//start_code_6").length, response.search("//end_code_6"));
+            }
+
+            var script7 = "";
+            if (response.search("//start_code_7") > 0) {
+                script7 = response.substring(response.search("//start_code_7")+("//start_code_7").length, response.search("//end_code_7"));
+            }
+
+            var script9 = "";
+            if (response.search("//start_code_9") > 0) {
+                script9 = response.substring(response.search("//start_code_9")+("//start_code_9").length, response.search("//end_code_9"));
+            }
+
+            // Regexp version (can't determine the order though, so we can't use it )
+            var pat = /\/\/allways_include([\w\W]*?)\/\/end_include([\w\W]*)/m;
+            var tmp = response;
+            var include = '';
+            var r;
+            while( (r = pat.exec(tmp))) {
+                include+=r[1];
+                tmp=r[2];
+            }
+            eval(script7);
+            codeToRun = include + script0+script1+script4+script2+script3+script6+script5+script9; /* Funktionen finns inte /Johan +"bindAddToCartButtons();"; */
+
+            if (window.execScript) {
+                setTimeout( function(){ window.execScript( codeToRun );}, 10);
+            } else {
+                setTimeout("eval(codeToRun)", 10);
+            }
+        },
+        onFailure: function() { window.alert('Sorry, product not available'); }
+    });
+}
+
+function nextOutfitItem(current_outfit_item_num){
+    var current_outfit_items = jQuery('#Outfit #Items .item').size();
+    var next_num = (Number(current_outfit_item_num + 1) === current_outfit_items) ? 0 : Number(current_outfit_item_num + 1);
+
+    closeTransparentCanvas('Level1');
+    jQuery('#Outfit #Items .item:eq('+next_num+') button').trigger('click');
+}
+
+// small product popup
+function showProductDetailPopup(name_, description, image){
+    showTransparentCanvas('Level2');
+    var sketch = (typeof image === 'undefined') ? '' : image;
+
+    if(typeof name_ === 'undefined'){
+        var popup_outfit_obj = jQuery('#OutfitThumbs .thumb:eq('+(Number(outfit_num)-1)+')');
+        var popup_product_obj = jQuery('.product:eq('+product_num+')', popup_outfit_obj);
+
+        name_ = jQuery('.product-name', popup_product_obj).val();
+        description = jQuery('.product-description', popup_product_obj).val();
+        sketch = jQuery('.product-sketch', popup_product_obj).val();
+    }
+
+    var html =  '<div id="PopupSmall">';
+    html +=     '   <div class="border-fat"></div>';
+    html +=     '<div><div style="float: left; overflow: hidden;">';
+    html +=     '   <h1>'+name_+'</h1>';
+    html +=     '   <div class="border-short"></div>';
+    html +=     '   <p>'+description+'</p>';
+    html +=     '</div>';
+    html +=     '<div style="float: right; width: 275px; height: 330px; overflow: hidden;">';
+    html +=     '   <div id="Close"><a href="#" onclick="closeTransparentCanvas(\'Level2\'); jQuery(\'#PopupSmall\').remove(); return false">close [x]</a></div>';
+    if(sketch.length > 0) {
+        html +=     '<div id="Sketch"><img src="'+sketch+'"/></div>';
+    }
+    html +=     '</div></div>';
+    html +=     '   <div class="border-fat bottom"></div>';
+    html +=     '</div>';
+
+    jQuery('body').append(html);
+
+    var popupLarge_offset = jQuery('#PopupLarge').offset();
+
+    if (current_url.indexOf('/outfits/') !== -1) {
+        // outfit
+        jQuery('#PopupSmall').css({'left':((jQuery(window).width()/2)-(jQuery('#PopupSmall').outerWidth()/2))+'px'});
+    }else{
+        // product
+        var popupsmall_width = ((win_width/2)-(jQuery('#PopupSmall').outerWidth()/2));
+        jQuery('#PopupSmall').css('left', popupsmall_width+'px');
+    }
+}
+
+function countrySelect() {
+	showTransparentCanvas('Level1');
+	jQuery('#PopupCountrySelector')
+		.css({
+			left: ((jQuery(window).width()/2) - (jQuery('#PopupCountrySelector').outerWidth()/2)) + 'px',
+			top: (jQuery(window).scrollTop() + 140) + 'px',
+			visibility: 'visible',
+			display: 'block'
+		})
+		.appendTo('body');
+}
+
+
+/* Scripts for the Item Detail Page */
+
+var lastColor = null;
+var hasRunCode = false;
+
+function isdefined( variable)
+{
+    return (typeof window[variable] !== 'undefined');
+}
+
+function showColorNotAvailable() {
+    jQuery("#noColorMessage").show();
+}
+
+var doZoom = false;
+
+function getItemsLeft(){
+    if (jQuery("#attribute508 :selected").text() === "SELECT COLOR FIRST") {
+        jQuery("#attribute508").attr("selectedIndex", "0");
+    } else {
+        var available_url = jQuery('#product_addtocart_form').attr('action').replace("/add", "/available");
+        $j.post(available_url, jQuery('#product_addtocart_form').serialize(), function(data){
+
+            var $selected = jQuery('#attribute508 option:selected');
+            var $options = jQuery( '#attribute508 + div li a' );
+
+            for( var i = 0, l = $options.length; i < l; i++ ){
+                if( jQuery( $options[i] ).text() === $selected.text() ){
+                    jQuery( $options[i] ).text( $selected.text() + ' ' + data );
+                    $options.closest('ul').prev().text( $selected.text() + ' ' + data );
+                    return;
+                }
+            }
+
+        });
+    }
+}
+
+
+function clearSelection() {
+    var colorNameHolder = document.getElementById("colorNameHolder");
+    colorNameHolder.innerHTML = "";
+    document.addToCart.attribute509.selectedIndex = 0;
+    jQuery("#clearSelectionLink").hide();
+    var imageContainer = document.getElementById("itemDetailImageList");
+    //imageContainer.innerHTML = document.getElementById("itemDetailContainer").innerHTML;
+    changeImage(jQuery('#styleImage').html(), jQuery('#mainImage').attr('longdesc'));
+    hideColorNotAvailable();
+
+    if (lastColor !== null) {
+        var colorImage = document.getElementById("colorName_"+lastColor);
+        if (colorImage !== null) {
+            colorImage.style.cssText = "border: 2px solid #d49a96";
+        }
+
+        lastColor = null;
+    }
+
+}
+
+function checkPasswords(password, confirmPassword, length){
+    var uInput = password.value;
+        var confirm = confirmPassword.value;
+        if (uInput !== confirm) {
+             window.alert("Confirmation of password failed, try again");
+
+                return false;
+        }else if(uInput.length <= length){
+            window.alert("Password can't be less than "+ length+ " characters");
+
+                return false;
+        }else{
+            return true;
+        }
+}
+
+function showClose(id) {
+    jQuery('#'+id).show();
+    jQuery('#'+id+'Link').hide();
+}

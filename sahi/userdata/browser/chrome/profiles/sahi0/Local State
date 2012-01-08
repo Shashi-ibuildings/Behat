@@ -1,0 +1,57 @@
+{
+   "browser": {
+      "enabled_labs_experiments": [ "print-preview" ],
+      "last_redirect_origin": ""
+   },
+   "local_state": {
+      "multiple_profile_prefs_version": 3
+   },
+   "ntp": {
+      "promo_locale": "en-US",
+      "promo_version": 2
+   },
+   "printing": {
+      "print_preview_enabled_once": true
+   },
+   "profile": {
+      "info_cache": {
+         "Default": {
+            "avatar_icon": "chrome://theme/IDR_PROFILE_AVATAR_0",
+            "name": "Default Profile"
+         }
+      },
+      "last_used": "Default"
+   },
+   "show-minimal-first-run-bubble": true,
+   "show-welcome-page": true,
+   "shutdown": {
+      "num_processes": 0,
+      "num_processes_slow": 0,
+      "type": 0
+   },
+   "uninstall_metrics": {
+      "installation_date2": "1316466464",
+      "launch_count": "112"
+   },
+   "user_experience_metrics": {
+      "session_id": 111,
+      "stability": {
+         "breakpad_registration_fail": 108,
+         "breakpad_registration_ok": 0,
+         "crash_count": 91,
+         "debugger_not_present": 108,
+         "debugger_present": 0,
+         "exited_cleanly": false,
+         "incomplete_session_end_count": 0,
+         "last_timestamp_sec": "1324415938",
+         "launch_count": 108,
+         "launch_time_sec": "1324417719",
+         "page_load_count": 0,
+         "renderer_crash_count": 0,
+         "renderer_hang_count": 0,
+         "session_end_completed": true,
+         "stats_buildtime": "1323201289",
+         "stats_version": "16.0.912.63"
+      }
+   }
+}

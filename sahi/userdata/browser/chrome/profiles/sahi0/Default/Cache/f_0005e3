@@ -1,0 +1,830 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://developers.facebook.com/schema/" class="no-js">
+<head><!--SAHI_INJECT_START-->
+<script>/*<![CDATA[*//*---->*/__sahiDebugStr__="";__sahiDebug__=function(s){__sahiDebugStr__+=(s+"\n");};/*--*//*]]>*/</script>
+<script src="/_s_/dyn/SessionState_domainfix/domainfix.js"></script>
+<script src='/_s_/spr/concat.js' id='_sahi_concat'></script>
+<script src='http://sahi.example.com/_s_/dyn/SessionState/state.js'></script>
+<script src='/_s_/spr/language_pack.js' id='langpack'></script>
+<script>/*<![CDATA[*//*---->*/_sahi.createCookie('sahisid', _sahi.sid);_sahi.loadXPathScript()/*--*//*]]>*/</script>
+<script>/*<![CDATA[*//*---->*/eval(_sahi.sendToServer("/_s_/dyn/Player_script/script.js"));/*--*//*]]>*/</script>
+<script src='/_s_/spr/playback.js'></script>
+<!--SAHI_INJECT_END-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=8,IE=9" >
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <link rel="apple-touch-icon" href="http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/img/favicon.png" />
+  <link rel="icon" href="http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/img/favicon.png" />
+
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+
+  <!-- loadstorm-25116 -->
+<title>ACNE - The Fashion House and Creative Collective from Sweden</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Find new and classic Acne jeans here. Official Acne online shop. Worldwide Shipping" />
+<meta name="keywords" content="acne jeans, Hex, Hep, Kex, Flex, Skin, Hug, Needle, Her, Ten, Tube, skinny acne jeans, slimfit jeans, skinny denim, fitted jeans, mens designer jeans, raw jeans" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<meta name="google-site-verification" content="Fp9qbO3id5q8O8YOxw1leeT0M5MVCiNPLrXU2CR5WDg" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1"/>
+
+<meta property="fb:admins" content="689976824" />
+<link rel="icon" href="http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/favicon.ico" type="image/x-icon" />
+
+
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://stage.acnestudios.com/js/blank.html';
+    var BLANK_IMG = 'http://stage.acnestudios.com/js/spacer.gif';
+//]]>
+</script>
+
+<script type="text/javascript">
+    var jsBaseUrl = 'http://stage.acnestudios.com/'; 
+    var skin_url = 'http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/js';
+</script>
+
+<link rel="stylesheet" type="text/css" href="http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/css/styles.css?v=ac518" media="all" />
+<link rel="stylesheet" type="text/css" href="http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/css/scaling.css?v=ac518" media="only screen and (max-width: 1200px), only screen and (max-height: 678px)" />
+<link rel="stylesheet" type="text/css" href="http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/css/iphone.css?v=ac518" media="only screen and (max-device-width: 480px)" />
+<link rel="stylesheet" type="text/css" href="http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/css/ipad.css?v=ac518" media="only screen and (min-device-width: 768px) and (max-device-width: 1024px)" />
+<script type="text/javascript" src="http://stage.acnestudios.com/js/jquery/jquery-1.6.3.min.js"></script>
+<script type="text/javascript" src="http://stage.acnestudios.com/js/jquery/noconflict.js"></script>
+<script type="text/javascript" src="http://stage.acnestudios.com/js/jquery/jquery.easing.1.3.min.js"></script>
+<script type="text/javascript" src="http://stage.acnestudios.com/js/jquery/jquery.hoverIntent.min.js"></script>
+<script type="text/javascript" src="http://stage.acnestudios.com/js/jquery/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="http://stage.acnestudios.com/js/jquery/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="http://stage.acnestudios.com/js/jwplayer/jwplayer.js"></script>
+<script type="text/javascript" src="http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/js/modernizr2.min.js?v=ac518"></script>
+<script type="text/javascript" src="http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/js/mootools-core-1.3.2.js?v=ac518"></script>
+<script type="text/javascript" src="http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/js/mootools-more-1.3.2.1.js?v=ac518"></script>
+<script type="text/javascript" src="http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/js/Implements.js?v=ac518"></script>
+<script type="text/javascript" src="http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/js/Lang.js?v=ac518"></script>
+<script type="text/javascript" src="http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/js/StyleSelect.js?v=ac518"></script>
+<script type="text/javascript" src="http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/js/general.js?v=ac518"></script>
+<script type="text/javascript" src="http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/js/acne-placeholder.js?v=ac518"></script>
+<script type="text/javascript" src="http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/js/videocontrols.js?v=ac518"></script>
+<script type="text/javascript" src="http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/js/minicart.js?v=ac518"></script>
+<script type="text/javascript" src="http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/js/navigation.js?v=ac518"></script>
+<script type="text/javascript" src="http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/js/jquery.product-image-navigation.js?v=ac518"></script>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/css/ie8.css?v=ac518" media="all" />
+<script type="text/javascript" src="http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/js/html5.js?v=ac518"></script>
+<script type="text/javascript" src="http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/js/jquery.ezmark.min.js?v=ac518"></script>
+<script type="text/javascript" src="http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/js/ezmark.js?v=ac518"></script>
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" href="http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/css/ie9.css?v=ac518" media="all" />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/css/ie7.css?v=ac518" media="all" />
+<![endif]-->
+
+<link rel="stylesheet" media="screen and (max-width: 800px)" href="/skin/frontend/enterprise/acnewhite/css/scaling.css" />
+<link rel="stylesheet" media="screen and (max-height: 600px)" href="/skin/frontend/enterprise/acnewhite/css/scaling.css" />
+</head>
+<body class=" catalog-category-view categorypath-shop-women-aw11-jeans-html category-jeans">
+<!-- 1column.phtml -->
+<!-- ClickTale Top part -->
+<script type="text/javascript">
+var WRInitTime=(new Date()).getTime();
+</script>
+<!-- ClickTale end of Top part -->
+    <meter value="0" min="0" max="100" id="preload"></meter>
+<header>
+        <div class="content">
+        <div class='menu_top'>
+<div class="search">
+    <form action="/catalogsearch/result/">
+        <fieldset>
+            <input type="text" class="search" name="q" results="5" placeholder="SEARCH" />
+        </fieldset>
+    </form>
+</div>
+<!--{CART_SIDEBAR_6f178024704e91e59f27817f15f01dca}-->	
+		
+<div class="top-cart">
+
+        <div class="block-title no-items">
+        <span id="cartHeader">Shopping Bag (<span>0</span>)</span>
+    </div>
+    <div id="topCartContent" class="block-content" style="display:none">
+        <div class="inner-wrapper">                            <p class="block-subtitle">
+                <span class="close-btn">x</span>
+                Recently added items            </p>
+            <p class="cart-empty">
+                You have no items in your shopping cart.            </p>
+                        </div>
+    </div>
+</div>
+<div id="controls">
+    <span id="sound" class="sound"><span>Sound On / Off</span></span>
+</div><!--/{CART_SIDEBAR_6f178024704e91e59f27817f15f01dca}--><!--{CATALOG_NAVIGATION_8e8ba6c4cf2fdde5d51df259c06dff30}--><script type='text/javascript'>
+(function($){
+    $(document).ready(function() {
+        $('#main_nav').css('display','none');
+        $('ul.nav > li').hover(function() {
+            var menu = $(this).attr('class');
+            $('nav ul.select').hide().parent().find('ul.' + menu).show();
+            $('nav').fadeIn();
+        });
+
+        $('header').mouseleave(function(e) {
+            $(this).find('nav').fadeOut();
+        });
+    });
+})(jQuery);
+</script>
+
+<ul class='nav'>
+    <li class='about'><a href="http://stage.acnestudios.com/">Acne Studios</a></li>
+    <li class='women'><a href="/shop/women.html">Shop Woman</a></li>
+    <li class='men'><a href="/shop/men.html">Shop Man</a></li>
+    <li class='collections'><a href="/collections/women/main_ss12/">Collections</a></li>
+        </ul>
+
+<nav id="main_nav">
+    <div>
+        <ul class="about select">
+            <li><span>Acne Studios</span></li>
+               <li><a href="http://www.acnepaper.com/" rel="external">Acne Paper</a></li>
+  <li><a href="/about/history">About</a></li>
+  <li><a href="/stores/store-locator">Stores</a></li>
+  <li><a href="/press/press-offices">Press</a></li>
+  <li><a href="/job-vacancies" target="_blank">Career</a></li>
+  <li><a href="/legal/legal">Legal</a></li>
+  <li><a href="/contact/contact-us">Contact</a></li>
+        </ul>
+
+                                <ul class="women select season">
+            <li><span>AW11</span></li>
+                            <li><a href="http://stage.acnestudios.com/shop/women/aw11/new-arrivals.html">New Arrivals</a></li>
+                            <li><a href="http://stage.acnestudios.com/shop/women/aw11/acne-paper.html">Acne Paper</a></li>
+                            <li><a href="http://stage.acnestudios.com/shop/women/aw11/trousers.html">Trousers</a></li>
+                            <li><a href="http://stage.acnestudios.com/shop/women/aw11/tops-blouses.html">Tops & Blouses</a></li>
+                            <li><a href="http://stage.acnestudios.com/shop/women/aw11/suit-jackets.html">Suit Jackets</a></li>
+                            <li><a href="http://stage.acnestudios.com/shop/women/aw11/leather.html">Leather</a></li>
+                            <li><a href="http://stage.acnestudios.com/shop/women/aw11/knits.html">Knits</a></li>
+                            <li><a href="http://stage.acnestudios.com/shop/women/aw11/dresses.html">Dresses</a></li>
+                            <li><a href="http://stage.acnestudios.com/shop/women/aw11/coats-jackets.html">Coats & Jackets</a></li>
+                            <li><a href="http://stage.acnestudios.com/shop/women/aw11/chinos.html">Chinos</a></li>
+                            <li><a href="http://stage.acnestudios.com/shop/women/aw11/skirts.html">Skirts</a></li>
+                            <li><a href="http://stage.acnestudios.com/shop/women/aw11/accessories.html">Accessories</a></li>
+                            <li><a href="http://stage.acnestudios.com/shop/women/aw11/shoes.html">Shoes</a></li>
+                            <li><a href="http://stage.acnestudios.com/shop/women/aw11/jeans.html">Jeans</a></li>
+                                    <li class="outlet"><a href="/outlet/outlet-women.html">Shop the outlet</a></li>
+                    </ul>
+                            
+                                <ul class="men select season">
+            <li><span>AW11</span></li>
+                        <li><a href="http://stage.acnestudios.com/shop/men/aw11/new-arrivals.html">New Arrivals</a></li>
+                        <li><a href="http://stage.acnestudios.com/shop/men/aw11/acne-paper.html">Acne Paper</a></li>
+                        <li><a href="http://stage.acnestudios.com/shop/men/aw11/trousers.html">Trousers</a></li>
+                        <li><a href="http://stage.acnestudios.com/shop/men/aw11/tees-fleece.html">Tees and Fleece</a></li>
+                        <li><a href="http://stage.acnestudios.com/shop/men/aw11/sweaters.html">Sweaters</a></li>
+                        <li><a href="http://stage.acnestudios.com/shop/men/aw11/suiting.html">Suiting</a></li>
+                        <li><a href="http://stage.acnestudios.com/shop/men/aw11/shirts.html">Shirts</a></li>
+                        <li><a href="http://stage.acnestudios.com/shop/men/aw11/outerwear.html">Outerwear</a></li>
+                        <li><a href="http://stage.acnestudios.com/shop/men/aw11/leather.html">Leather</a></li>
+                        <li><a href="http://stage.acnestudios.com/shop/men/aw11/chinos.html">Chinos</a></li>
+                        <li><a href="http://stage.acnestudios.com/shop/men/aw11/kidswear.html">Kidswear</a></li>
+                        <li><a href="http://stage.acnestudios.com/shop/men/aw11/accessories.html">Accessories</a></li>
+                        <li><a href="http://stage.acnestudios.com/shop/men/aw11/shoes.html">Shoes</a></li>
+                        <li><a href="http://stage.acnestudios.com/shop/men/aw11/jeans.html">Jeans</a></li>
+                        <li><a href="http://stage.acnestudios.com/shop/men/aw11/candy-collection.html">Candy Collection</a></li>
+                                     <li class="outlet"><a href="/outlet/outlet-men.html">Shop the outlet</a></li>
+                    </ul>
+                            
+        
+                <ul class="collections select">
+            <li><span>Women's Collections</span></li>
+                                            <li><a href="http://stage.acnestudios.com/collections/women/pre-aw11.html">Women's Pre A/W 2011</a></li>
+                                                            <li><a href="http://stage.acnestudios.com/collections/women/women-capsule-aw11.html">Women's Capsule A/W 2011</a></li>
+                                                            <li><a href="http://stage.acnestudios.com/collections/women/deploy2.html">CollectionTest2</a></li>
+                                        <li class="title"><span>Men's Collections</span></li>
+                                            <li><a href="http://stage.acnestudios.com/collections/men/tetcollection.html">TetCollection</a></li>
+                                                            <li><a href="http://stage.acnestudios.com/collections/men/deply.html">CollectionTest</a></li>
+                                    </ul>
+
+        <ul class="bag">
+            <li><span>Shopping bag</span></li>
+                            <li><a href="/customer/account/login/">Log in or Sign up</a></li>
+                        <li><a href="/newsletter/subscriber/form" class="newsletter-subscription" rel="">Subscribe to newsletter</a></li>
+            <li><a href="/shopping-help/">Shopping help</a></li>
+            <li class="title">Shipping to</li>
+            <li><a href="/shipping-destination/">Germany </a></li>
+        </ul>
+    </div>
+</nav>
+<!--/{CATALOG_NAVIGATION_8e8ba6c4cf2fdde5d51df259c06dff30}--></div>
+            </div>
+</header>
+    <!--{GLOBAL_MESSAGES_3e966cafdcb3f0c9cd9f8bc6a0021644}--><!--/{GLOBAL_MESSAGES_3e966cafdcb3f0c9cd9f8bc6a0021644}-->    
+
+<!-- H -->
+    <!-- div class="category-title">
+        <h2></h2>
+    </div -->
+        <script>
+(function($) {
+    $(document).ready(function() {
+        var products = [];
+        $('section.product > a[id]').each(function() {
+            products.push(this.id);
+        });
+    });
+})(jQuery);
+</script>
+
+    
+<!-- 29 --><div class="logo_container_shop">
+    <div>
+        <a href="http://stage.acnestudios.com/">
+            <img src="http://stage.acnestudios.com/skin/frontend/enterprise/acnewhite/img/logo_acne-large.png" alt="Acne" />
+        </a>
+    </div>
+</div>
+<a href="javascript:;" rel="scroll" class="left"></a>
+<a href="javascript:;" rel="scroll" class="right"></a>
+
+    <h2 class="shop-title">
+                SHOP WOMAN
+        </h2>
+      <h3 class="category-title">JEANS</h3>
+
+<div id="bodycontainer">
+<article class="slides">
+
+
+
+ <section id="page1">  <section id="page2">  <section id="page3">  <section id="page4"> <section>
+
+  <ul class="items">
+    <li>
+
+        <!-- Image -->
+        <section class="product">
+            <a id="30Y114-120" href="http://stage.acnestudios.com/shop/women/aw11/jeans/snake-in-the-shade.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/t/r/trouser.jpg" alt="Snake In The Shade" />
+                    <section class="product_details">
+                        <p class="category"></p>
+                        <h1>Snake In The Shade</h1>
+                        <div>
+                                                                                    <span class="price">180 EUR</span>
+                        </div>
+                        <p>Length 32 | Length 34</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+        <!-- Image -->
+        <section class="product">
+            <a id="30D114-142" href="http://stage.acnestudios.com/shop/women/aw11/jeans/skin-grey-basement.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/images/catalog/product/placeholder/small_image.jpg" alt="Skin Grey Basement" />
+                    <section class="product_details">
+                        <p class="category"></p>
+                        <h1>Skin Grey Basement</h1>
+                        <div>
+                                                                                    <span class="price">180 EUR</span>
+                        </div>
+                        <p>Length 32 | Length 34</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+        <!-- Image -->
+        <section class="product">
+            <a id="30U114-158" href="http://stage.acnestudios.com/shop/women/aw11/jeans/needle-atlantis.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/images/catalog/product/placeholder/small_image.jpg" alt="Needle Atlantis" />
+                    <section class="product_details">
+                        <p class="category"></p>
+                        <h1>Needle Atlantis</h1>
+                        <div>
+                                                                                    <span class="price">190 EUR</span>
+                        </div>
+                        <p>Length 32 | Length 34</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+        <!-- Image -->
+        <section class="product">
+            <a id="30C114-151" href="http://stage.acnestudios.com/shop/women/aw11/jeans/kex-atlantis.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/images/catalog/product/placeholder/small_image.jpg" alt="Kex Atlantis" />
+                    <section class="product_details">
+                        <p class="category"></p>
+                        <h1>Kex Atlantis</h1>
+                        <div>
+                                                                                    <span class="price">190 EUR</span>
+                        </div>
+                        <p>Length 32 | Length 34</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+        <!-- Image -->
+        <section class="product">
+            <a id="30U114-155" href="http://stage.acnestudios.com/shop/women/aw11/jeans/needle-slow.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/3/0/30u114-155_a_405.jpg" alt="Needle Slow" />
+                    <section class="product_details">
+                        <p class="category"></p>
+                        <h1>Needle Slow</h1>
+                        <div>
+                                                                                    <span class="price">200 EUR</span>
+                        </div>
+                        <p>Length 32 | Length 34</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+        <!-- Image -->
+        <section class="product">
+            <a id="30C114-149" href="http://stage.acnestudios.com/shop/women/aw11/jeans/kex-power.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/images/catalog/product/placeholder/small_image.jpg" alt="Kex Power" />
+                    <section class="product_details">
+                        <p class="category"></p>
+                        <h1>Kex Power</h1>
+                        <div>
+                                                                                    <span class="price">190 EUR</span>
+                        </div>
+                        <p>Length 32 | Length 34</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+        <!-- Image -->
+        <section class="product">
+            <a id="30M114-152" href="http://stage.acnestudios.com/shop/women/aw11/jeans/hex-slow.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/images/catalog/product/placeholder/small_image.jpg" alt="Hex Slow" />
+                    <section class="product_details">
+                        <p class="category"></p>
+                        <h1>Hex Slow</h1>
+                        <div>
+                                                                                    <span class="price">200 EUR</span>
+                        </div>
+                        <p>Length 32 | Length 34</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+        <!-- Image -->
+        <section class="product">
+            <a id="30C114-147" href="http://stage.acnestudios.com/shop/women/aw11/jeans/kex-slow.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/images/catalog/product/placeholder/small_image.jpg" alt="Kex Slow" />
+                    <section class="product_details">
+                        <p class="category"></p>
+                        <h1>Kex Slow</h1>
+                        <div>
+                                                                                    <span class="price">200 EUR</span>
+                        </div>
+                        <p>Length 32 | Length 34</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+    </li>
+  </ul>
+  <ul class="items">
+    <li>        <!-- Image -->
+        <section class="product">
+            <a id="30H114-132" href="http://stage.acnestudios.com/shop/women/aw11/jeans/flex-power.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/images/catalog/product/placeholder/small_image.jpg" alt="Flex Power" />
+                    <section class="product_details">
+                        <p class="category"></p>
+                        <h1>Flex Power</h1>
+                        <div>
+                                                                                    <span class="price">190 EUR</span>
+                        </div>
+                        <p>Length 32 | Length 34</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+        <!-- Image -->
+        <section class="product">
+            <a id="1GK113-" href="http://stage.acnestudios.com/shop/women/aw11/jeans/flex-painted-paw11.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/images/catalog/product/placeholder/small_image.jpg" alt="Flex Painted PAW11" />
+                    <section class="product_details">
+                        <p class="category"></p>
+                        <h1>Flex Painted PAW11</h1>
+                        <div>
+                                                                                    <span class="price">300 EUR</span>
+                        </div>
+                        <p>Purple | Orange</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+        <!-- Image -->
+        <section class="product">
+            <a id="30H114-129" href="http://stage.acnestudios.com/shop/women/aw11/jeans/flex-nico.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/images/catalog/product/placeholder/small_image.jpg" alt="Flex Nico" />
+                    <section class="product_details">
+                        <p class="category"></p>
+                        <h1>Flex Nico</h1>
+                        <div>
+                                                                                    <span class="price">180 EUR</span>
+                        </div>
+                        <p>Length 32 | Length 34</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+        <!-- Image -->
+        <section class="product">
+            <a id="1GF113-" href="http://stage.acnestudios.com/shop/women/aw11/jeans/flex-studs.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/images/catalog/product/placeholder/small_image.jpg" alt="Flex Studs" />
+                    <section class="product_details">
+                        <p class="category">fitted denim trousers</p>
+                        <h1>Flex Studs</h1>
+                        <div>
+                                                                                    <span class="price">340 EUR</span>
+                        </div>
+                        <p>Grey</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+        <!-- Image -->
+        <section class="product">
+            <a id="30H114-127" href="http://stage.acnestudios.com/shop/women/aw11/jeans/flex-odessa.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/3/0/30h114-127_a_444.jpg" alt="Flex Odessa" />
+                    <section class="product_details">
+                        <p class="category"></p>
+                        <h1>Flex Odessa</h1>
+                        <div>
+                                                                                    <span class="price">200 EUR</span>
+                        </div>
+                        <p>Length 32 | Length 34</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+        <!-- Image -->
+        <section class="product">
+            <a id="30D114-159" href="http://stage.acnestudios.com/shop/women/aw11/jeans/skin-black-white.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/images/catalog/product/placeholder/small_image.jpg" alt="Skin Black & White" />
+                    <section class="product_details">
+                        <p class="category"></p>
+                        <h1>Skin Black & White</h1>
+                        <div>
+                                                                                    <span class="price">200 EUR</span>
+                        </div>
+                        <p>Length 32 | Length 34</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+        <!-- Image -->
+        <section class="product">
+            <a id="30D114-144" href="http://stage.acnestudios.com/shop/women/aw11/jeans/skin-uptown.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/3/0/30d114-144_a_416.jpg" alt="Skin Uptown" />
+                    <section class="product_details">
+                        <p class="category"></p>
+                        <h1>Skin Uptown</h1>
+                        <div>
+                                                                                    <span class="price">150 EUR</span>
+                        </div>
+                        <p>Length 32 | Length 34</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+        <!-- Image -->
+        <section class="product">
+            <a id="30U114-160" href="http://stage.acnestudios.com/shop/women/aw11/jeans/needle-nebraska.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/images/catalog/product/placeholder/small_image.jpg" alt="Needle Nebraska" />
+                    <section class="product_details">
+                        <p class="category"></p>
+                        <h1>Needle Nebraska</h1>
+                        <div>
+                                                                                    <span class="price">200 EUR</span>
+                        </div>
+                        <p>Length 32 | Length 34</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+    </li>
+  </ul>
+  <ul class="items">
+    <li>        <!-- Image -->
+        <section class="product">
+            <a id="30D114-140" href="http://stage.acnestudios.com/shop/women/aw11/jeans/skin-true-blue.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/images/catalog/product/placeholder/small_image.jpg" alt="Skin True Blue" />
+                    <section class="product_details">
+                        <p class="category"></p>
+                        <h1>Skin True Blue</h1>
+                        <div>
+                                                                                    <span class="price">200 EUR</span>
+                        </div>
+                        <p>Length 32 | Length 34</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+        <!-- Image -->
+        <section class="product">
+            <a id="30U114-156" href="http://stage.acnestudios.com/shop/women/aw11/jeans/needle-grey-basement.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/images/catalog/product/placeholder/small_image.jpg" alt="Needle Grey Basement" />
+                    <section class="product_details">
+                        <p class="category"></p>
+                        <h1>Needle Grey Basement</h1>
+                        <div>
+                                                                                    <span class="price">180 EUR</span>
+                        </div>
+                        <p>Length 32 | Length 34</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+        <!-- Image -->
+        <section class="product">
+            <a id="30C114-150" href="http://stage.acnestudios.com/shop/women/aw11/jeans/kex-nico.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/images/catalog/product/placeholder/small_image.jpg" alt="Kex Nico" />
+                    <section class="product_details">
+                        <p class="category"></p>
+                        <h1>Kex Nico</h1>
+                        <div>
+                                                                                    <span class="price">180 EUR</span>
+                        </div>
+                        <p>Length 32 | Length 34</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+        <!-- Image -->
+        <section class="product">
+            <a id="30M114-153" href="http://stage.acnestudios.com/shop/women/aw11/jeans/hex-grey-basement.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/images/catalog/product/placeholder/small_image.jpg" alt="Hex Grey Basement" />
+                    <section class="product_details">
+                        <p class="category"></p>
+                        <h1>Hex Grey Basement</h1>
+                        <div>
+                                                                                    <span class="price">180 EUR</span>
+                        </div>
+                        <p>Length 32 | Length 34</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+        <!-- Image -->
+        <section class="product">
+            <a id="30C114-148" href="http://stage.acnestudios.com/shop/women/aw11/jeans/kex-blue-monday.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/images/catalog/product/placeholder/small_image.jpg" alt="Kex Blue Monday" />
+                    <section class="product_details">
+                        <p class="category"></p>
+                        <h1>Kex Blue Monday</h1>
+                        <div>
+                                                                                    <span class="price">210 EUR</span>
+                        </div>
+                        <p>Length 32 | Length 34</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+        <!-- Image -->
+        <section class="product">
+            <a id="30H114-137" href="http://stage.acnestudios.com/shop/women/aw11/jeans/flex-gemini.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/images/catalog/product/placeholder/small_image.jpg" alt="Flex Gemini" />
+                    <section class="product_details">
+                        <p class="category"></p>
+                        <h1>Flex Gemini</h1>
+                        <div>
+                                                                                    <span class="price">190 EUR</span>
+                        </div>
+                        <p>Length 32 | Length 34</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+        <!-- Image -->
+        <section class="product">
+            <a id="30C114-146" href="http://stage.acnestudios.com/shop/women/aw11/jeans/kex-odessa.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/3/0/30c114-146_a_429.jpg" alt="Kex Odessa" />
+                    <section class="product_details">
+                        <p class="category"></p>
+                        <h1>Kex Odessa</h1>
+                        <div>
+                                                                                    <span class="price">200 EUR</span>
+                        </div>
+                        <p>Length 32 | Length 34</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+        <!-- Image -->
+        <section class="product">
+            <a id="30H114-130" href="http://stage.acnestudios.com/shop/women/aw11/jeans/flex-blue-monday.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/images/catalog/product/placeholder/small_image.jpg" alt="Flex Blue Monday" />
+                    <section class="product_details">
+                        <p class="category"></p>
+                        <h1>Flex Blue Monday</h1>
+                        <div>
+                                                                                    <span class="price">210 EUR</span>
+                        </div>
+                        <p>Length 32 | Length 34</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+    </li>
+  </ul>
+  <ul class="items">
+    <li>        <!-- Image -->
+        <section class="product">
+            <a id="1GH113-" href="http://stage.acnestudios.com/shop/women/aw11/jeans/flex-superslim-paw11.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/images/catalog/product/placeholder/small_image.jpg" alt="Flex Superslim PAW11" />
+                    <section class="product_details">
+                        <p class="category"></p>
+                        <h1>Flex Superslim PAW11</h1>
+                        <div>
+                                                                                    <span class="price">190 EUR</span>
+                        </div>
+                        <p>Indigo</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+        <!-- Image -->
+        <section class="product">
+            <a id="30H114-128" href="http://stage.acnestudios.com/shop/women/aw11/jeans/flex-yoko.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/images/catalog/product/placeholder/small_image.jpg" alt="Flex Yoko" />
+                    <section class="product_details">
+                        <p class="category"></p>
+                        <h1>Flex Yoko</h1>
+                        <div>
+                                                                                    <span class="price">190 EUR</span>
+                        </div>
+                        <p>Length 32 | Length 34</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+        <!-- Image -->
+        <section class="product">
+            <a id="1GC113-" href="http://stage.acnestudios.com/shop/women/aw11/jeans/magical-l-den.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/1/G/1GC113-135_a_282.jpg" alt="Magical L Den" />
+                    <section class="product_details">
+                        <p class="category">0</p>
+                        <h1>Magical L Den</h1>
+                        <div>
+                                                                                    <span class="price">340 EUR</span>
+                        </div>
+                        <p>Indigo</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+        <!-- Image -->
+        <section class="product">
+            <a id="30H114-126" href="http://stage.acnestudios.com/shop/women/aw11/jeans/flex-atlantis.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/3/0/30h114-126_a_461.jpg" alt="Flex Atlantis" />
+                    <section class="product_details">
+                        <p class="category"></p>
+                        <h1>Flex Atlantis</h1>
+                        <div>
+                                                                                    <span class="price">190 EUR</span>
+                        </div>
+                        <p>Length 32 | Length 34</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+        <!-- Image -->
+        <section class="product">
+            <a id="30D114-157" href="http://stage.acnestudios.com/shop/women/aw11/jeans/skin-atlantis.html">
+                <div>
+                    <img src="http://stage.acnestudios.com/media/catalog/product/cache/25/small_image/233x311/17f82f742ffe127f42dca9de82fb58b1/images/catalog/product/placeholder/small_image.jpg" alt="Skin Atlantis" />
+                    <section class="product_details">
+                        <p class="category"></p>
+                        <h1>Skin Atlantis</h1>
+                        <div>
+                                                                                    <span class="price">190 EUR</span>
+                        </div>
+                        <p>Length 32 | Length 34</p>
+                    </section>
+                </div>
+            </a>
+        </section>
+
+
+    </li>
+  </ul>
+</section>
+ </section>  </section>  </section>  </section> </article>
+</div>
+
+
+<script type="text/javascript">
+//resize product overlay
+jQuery(window).bind('load resize', function() {
+   jQuery('section.product').each(function() {
+       jQuery('section',this).width(jQuery(this).find('img').width());
+   });
+});
+</script>
+<script>
+(function($) {
+    $(document).ready(function() {
+        var products = [];
+        $('figure > a.hotspot[id]').each(function() {
+            products.push(this.id);
+        });
+    });
+})(jQuery);
+</script>
+
+        <footer>
+        <div class="content">
+            <div class="information">
+				<a href="callto://+460855119400">Customer Service +46 (0) 855 119 400</a>            </div>
+            <div class="misc">
+            </div>
+            <nav>
+                <ul>
+                </ul>
+            </nav>
+    </footer>
+	<div id="popup-overlay"></div>
+    
+<!-- BEGIN GOOGLE ANALYTICS CODE -->
+<script type="text/javascript">
+//<![CDATA[
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+    })();
+
+    var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-649968-10']);
+_gaq.push(['_setDomainName', '.acnestudios.com']);
+_gaq.push(['_trackPageview']);
+_gaq.push(['_trackPageview', '/shop/women/shoplevel/category']);
+
+//]]>
+</script>
+<!-- END GOOGLE ANALYTICS CODE -->
+</body>
+</html>

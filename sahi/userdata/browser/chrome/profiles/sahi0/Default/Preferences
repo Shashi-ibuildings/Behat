@@ -1,0 +1,261 @@
+{
+   "browser": {
+      "check_default_browser": false,
+      "clear_lso_data_enabled": true,
+      "window_placement": {
+         "always_on_top": false,
+         "bottom": 693,
+         "left": 22,
+         "maximized": false,
+         "right": 1072,
+         "top": 44,
+         "work_area_bottom": 725,
+         "work_area_left": 0,
+         "work_area_right": 1280,
+         "work_area_top": 22
+      }
+   },
+   "cloud_print": {
+      "email": ""
+   },
+   "countryid_at_install": 21843,
+   "default_apps_install_state": 1,
+   "default_search_provider": {
+      "enabled": true,
+      "encodings": "UTF-8",
+      "icon_url": "http://www.google.com/favicon.ico",
+      "id": "2",
+      "instant_url": "{google:baseURL}webhp?{google:RLZ}sourceid=chrome-instant&{google:instantFieldTrialGroupParameter}ie={inputEncoding}&ion=1{searchTerms}",
+      "keyword": "google.com",
+      "name": "Google",
+      "prepopulate_id": "1",
+      "search_url": "{google:baseURL}search?{google:RLZ}{google:acceptedSuggestion}{google:originalQueryForSuggestion}{google:searchFieldtrialParameter}{google:instantFieldTrialGroupParameter}sourceid=chrome&ie={inputEncoding}&q={searchTerms}",
+      "suggest_url": "{google:baseSuggestURL}search?{google:searchFieldtrialParameter}{google:instantFieldTrialGroupParameter}client=chrome&hl={language}&q={searchTerms}"
+   },
+   "dns_prefetching": {
+      "host_referral_list": [ 2, [ "http://sahi.example.com/", [ "http://sahi.example.com/", 62.24478022920933 ] ], [ "http://uat.acnestudios.com/", [ "http://api.acnestudios.com/", 4.625795154094069, "http://ips-invite.iperceptions.com/", 2.270577165966927, "http://s.clicktale.net/", 1.3272630370897343, "http://sahi.example.com/", 2.3047796951058137, "http://uat.acnestudios.com/", 86.86837700754118, "http://www.clicktale.net/", 1.3272630370897343, "http://www.google-analytics.com/", 3.282296353121893 ] ] ],
+      "startup_list": [ 1, "http://sahi.example.com/" ]
+   },
+   "download": {
+      "directory_upgrade": true,
+      "extensions_to_open": ""
+   },
+   "extensions": {
+      "autoupdate": {
+         "last_check": "12968519752938949",
+         "next_check": "12968893585653186"
+      },
+      "chrome_url_overrides": {
+         "bookmarks": [ "chrome-extension://eemcgdkfndhakfknompkggombfjjjeno/main.html" ]
+      },
+      "settings": {
+         "ahfgeienlihckogmohjhadlkjgocpleb": {
+            "active_permissions": {
+               "api": [ "management", "webstorePrivate" ]
+            },
+            "app_launcher_index": -2,
+            "page_index": 0
+         },
+         "blpcfgokakmgnkcojhhkbfbldkacnbeo": {
+            "app_launcher_index": 3,
+            "from_bookmark": false,
+            "from_webstore": false,
+            "install_time": "12968519754685207",
+            "lastpingday": "12968496000725903",
+            "location": 2,
+            "manifest": {
+               "app": {
+                  "launch": {
+                     "container": "tab",
+                     "web_url": "http://www.youtube.com/"
+                  },
+                  "web_content": {
+                     "enabled": true,
+                     "origin": "http://www.youtube.com"
+                  }
+               },
+               "current_locale": "en_US",
+               "default_locale": "en",
+               "description": "The world's most popular online video community.",
+               "icons": {
+                  "128": "128.png"
+               },
+               "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDC/HotmFlyuz5FaHaIbVBhhL4BwbcUtsfWwzgUMpZt5ZsLB2nW/Y5xwNkkPANYGdVsJkT2GPpRRIKBO5QiJ7jPMa3EZtcZHpkygBlQLSjMhdrAKevpKgIl6YTkwzNvExY6rzVDzeE9zqnIs33eppY4S5QcoALMxuSWlMKqgFQjHQIDAQAB",
+               "name": "YouTube",
+               "update_url": "http://clients2.google.com/service/update2/crx",
+               "version": "4.2.2"
+            },
+            "page_index": 0,
+            "path": "blpcfgokakmgnkcojhhkbfbldkacnbeo/4.2.2_0",
+            "state": 1
+         },
+         "coobgpohoikkiipiblmjeljniedjpjpf": {
+            "app_launcher_index": 4,
+            "from_bookmark": false,
+            "from_webstore": false,
+            "install_time": "12968519754921085",
+            "lastpingday": "12968496000725903",
+            "location": 2,
+            "manifest": {
+               "app": {
+                  "launch": {
+                     "web_url": "http://www.google.com/"
+                  },
+                  "urls": [ "*://www.google.com/search", "*://www.google.com/webhp", "*://www.google.com/imgres" ]
+               },
+               "current_locale": "en_US",
+               "default_locale": "en",
+               "description": "The fastest way to search the web.",
+               "icons": {
+                  "128": "128.png",
+                  "16": "16.png",
+                  "32": "32.png",
+                  "48": "48.png"
+               },
+               "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDIiso3Loy5VJHL40shGhUl6it5ZG55XB9q/2EX6aa88jAxwPutbCgy5d9bm1YmBzLfSgpX4xcpgTU08ydWbd7b50fbkLsqWl1mRhxoqnN01kuNfv9Hbz9dWWYd+O4ZfD3L2XZs0wQqo0y6k64n+qeLkUMd1MIhf6MR8Xz1SOA8pwIDAQAB",
+               "name": "Google Search",
+               "update_url": "http://clients2.google.com/service/update2/crx",
+               "version": "0.0.0.16"
+            },
+            "page_index": 0,
+            "path": "coobgpohoikkiipiblmjeljniedjpjpf/0.0.0.16_0",
+            "state": 1
+         },
+         "pjkljhegncpnkpknbcohdijeoejaedia": {
+            "active_permissions": {
+               "api": [ "notifications" ]
+            },
+            "app_launcher_index": 5,
+            "from_bookmark": false,
+            "from_webstore": false,
+            "install_time": "12968519755132197",
+            "lastpingday": "12968496000725903",
+            "location": 2,
+            "manifest": {
+               "app": {
+                  "launch": {
+                     "container": "tab",
+                     "web_url": "https://mail.google.com/mail/ca"
+                  },
+                  "urls": [ "*://mail.google.com/mail/ca" ]
+               },
+               "current_locale": "en_US",
+               "default_locale": "en",
+               "description": "Fast, searchable email with less spam.",
+               "icons": {
+                  "128": "128.png",
+                  "24": "24.png",
+                  "48": "48.png"
+               },
+               "key": "MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQDCuGglK43iAz3J9BEYK/Mz6ZhloIMMDqQSAaf3vJt4eHbTbSDsu4WdQ9dQDRcKlg8nwQdePBt0C3PSUBtiSNSS37Z3qEGfS7LCju3h6pI1Yr9MQtxw+jUa7kXXIS09VV73pEFUT/F7c6Qe8L5ZxgAcBvXBh1Fie63qb02I9XQ/CQIDAQAB",
+               "name": "Gmail",
+               "options_page": "https://mail.google.com/mail/ca/#settings",
+               "permissions": [ "notifications" ],
+               "update_url": "http://clients2.google.com/service/update2/crx",
+               "version": "6.1.4"
+            },
+            "page_index": 0,
+            "path": "pjkljhegncpnkpknbcohdijeoejaedia/6.1.4_0",
+            "state": 1
+         }
+      }
+   },
+   "homepage": "http://www.google.com/",
+   "homepage_is_newtabpage": true,
+   "http_throttling": {
+      "enabled": true
+   },
+   "instant": {
+      "enabled_time": "12968294429258592"
+   },
+   "ntp": {
+      "app_page_names": [ "Apps" ],
+      "pref_version": 3,
+      "shown_sections": 64
+   },
+   "plugins": {
+      "enabled_internal_pdf3": true,
+      "enabled_nacl": true,
+      "last_internal_directory": "/Applications/Google Chrome.app/Contents/Versions/16.0.912.63/Google Chrome Framework.framework/Internet Plug-Ins",
+      "plugins_list": [ {
+         "enabled": true,
+         "name": "Shockwave Flash",
+         "path": "/Applications/Google Chrome.app/Contents/Versions/16.0.912.63/Google Chrome Framework.framework/Internet Plug-Ins/Flash Player Plugin for Chrome.plugin",
+         "version": "10.3.183.7"
+      }, {
+         "enabled": true,
+         "name": "Shockwave Flash",
+         "path": "/Library/Internet Plug-Ins/Flash Player.plugin",
+         "version": "10.3.183.7"
+      }, {
+         "enabled": true,
+         "name": "QuickTime Plug-in 7.7.1",
+         "path": "/Library/Internet Plug-Ins/QuickTime Plugin.plugin",
+         "version": "7.7.1"
+      }, {
+         "enabled": true,
+         "name": "Remoting Viewer",
+         "path": "internal-remoting-viewer",
+         "version": ""
+      }, {
+         "enabled": true,
+         "name": "Native Client",
+         "path": "/Applications/Google Chrome.app/Contents/Versions/16.0.912.63/Google Chrome Framework.framework/Internet Plug-Ins/ppGoogleNaClPluginChrome.plugin",
+         "version": ""
+      }, {
+         "enabled": true,
+         "name": "Chrome PDF Viewer",
+         "path": "/Applications/Google Chrome.app/Contents/Versions/16.0.912.63/Google Chrome Framework.framework/Internet Plug-Ins/PDF.plugin",
+         "version": ""
+      }, {
+         "enabled": true,
+         "name": "Java Applet Plug-in",
+         "path": "/Library/Internet Plug-Ins/JavaAppletPlugin.plugin",
+         "version": "14.0.3"
+      }, {
+         "enabled": true,
+         "name": "LogMeIn Plugin 1.0.0.586",
+         "path": "/Library/Internet Plug-Ins/LogMeIn.plugin",
+         "version": "1.0.586"
+      }, {
+         "enabled": true,
+         "name": "Default Plug-in",
+         "path": "default_plugin",
+         "version": "1"
+      }, {
+         "enabled": true,
+         "name": "Flash"
+      }, {
+         "enabled": true,
+         "name": "QuickTime"
+      }, {
+         "enabled": true,
+         "name": "Remoting Viewer"
+      }, {
+         "enabled": true,
+         "name": "Native Client"
+      }, {
+         "enabled": true,
+         "name": "Chrome PDF Viewer"
+      }, {
+         "enabled": true,
+         "name": "Java Applet Plug-in"
+      }, {
+         "enabled": true,
+         "name": "LogMeIn Plugin 1.0.0.586"
+      }, {
+         "enabled": true,
+         "name": "Default Plug-in"
+      } ]
+   },
+   "profile": {
+      "content_settings": {
+         "pref_version": 1
+      },
+      "exited_cleanly": false
+   },
+   "tabs": {
+      "use_compact_navigation_bar": false,
+      "use_vertical_tabs": false
+   }
+}

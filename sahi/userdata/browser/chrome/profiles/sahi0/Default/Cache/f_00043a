@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" xmlns:fb="http://developers.facebook.com/schema/" class="no-js">
+<head><!--SAHI_INJECT_START-->
+<script>/*<![CDATA[*//*---->*/__sahiDebugStr__="";__sahiDebug__=function(s){__sahiDebugStr__+=(s+"\n");};/*--*//*]]>*/</script>
+<script src="/_s_/dyn/SessionState_domainfix/domainfix.js"></script>
+<script src='/_s_/spr/concat.js' id='_sahi_concat'></script>
+<script src='http://sahi.example.com/_s_/dyn/SessionState/state.js'></script>
+<script src='/_s_/spr/language_pack.js' id='langpack'></script>
+<script>/*<![CDATA[*//*---->*/_sahi.createCookie('sahisid', _sahi.sid);_sahi.loadXPathScript()/*--*//*]]>*/</script>
+<script>/*<![CDATA[*//*---->*/eval(_sahi.sendToServer("/_s_/dyn/Player_script/script.js"));/*--*//*]]>*/</script>
+<script src='/_s_/spr/playback.js'></script>
+<!--SAHI_INJECT_END-->
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=8,IE=9" >
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+
+  <link rel="apple-touch-icon" href="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/img/favicon.png" />
+  <link rel="icon" href="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/img/favicon.png" />
+
+  <meta property="og:title" content="" />
+  <meta property="og:description" content="" />
+  <meta property="og:image" content="" />
+
+  <!-- loadstorm-25116 -->
+<title>ACNE - The Fashion House and Creative Collective from Sweden</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="description" content="Shop and view the latest Womenswear, Menswear, Shoes and Accessories Collection from the official Acne website. Worldwide Shipping. " />
+<meta name="keywords" content="Acne, acne clothing, acne jeans, acne clothes, new collection Swedish designer, clothing, local acne store, shop online, jeans, shoes, boots, skinny jeans, sun glasses, jewelry, ready to wear, bag, designer, collections, pistol short, acne cardigan, acne blazer, acne skirt, limit, max, kex, roc, accessories, shop, hand bag, purse, wallet, mens designer jeans, swedish fashion, jonny johansson, mikael schiller, acne paper" />
+<meta name="robots" content="INDEX,FOLLOW" />
+<meta name="google-site-verification" content="Fp9qbO3id5q8O8YOxw1leeT0M5MVCiNPLrXU2CR5WDg" />
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=1"/>
+
+<meta property="fb:admins" content="689976824" />
+<link rel="icon" href="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/favicon.ico" type="image/x-icon" />
+<link rel="shortcut icon" href="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/favicon.ico" type="image/x-icon" />
+
+
+<script type="text/javascript">
+//<![CDATA[
+    var BLANK_URL = 'http://uat.acnestudios.com/js/blank.html';
+    var BLANK_IMG = 'http://uat.acnestudios.com/js/spacer.gif';
+//]]>
+</script>
+
+<script type="text/javascript">
+    var jsBaseUrl = 'http://uat.acnestudios.com/'; 
+    var skin_url = 'http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/js';
+</script>
+
+<link rel="stylesheet" type="text/css" href="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/css/styles.css?v=c8a12" media="all" />
+<link rel="stylesheet" type="text/css" href="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/js/jquery.jcarousel.css?v=c8a12" media="all" />
+<link rel="stylesheet" type="text/css" href="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/css/iphone.css?v=c8a12" media="only screen and (max-device-width: 480px)" />
+<link rel="stylesheet" type="text/css" href="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/css/ipad.css?v=c8a12" media="only screen and (min-device-width: 768px) and (max-device-width: 1024px)" />
+<link rel="stylesheet" type="text/css" href="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/css/print.css?v=c8a12" media="print" />
+<script type="text/javascript" src="http://uat.acnestudios.com/js/jquery/jquery-1.6.3.min.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/jquery/noconflict.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/jquery/jquery.easing.1.3.min.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/jquery/jquery.hoverIntent.min.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/jquery/jquery.jcarousel.min.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/jquery/jquery.placeholder.min.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/jwplayer/jwplayer.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/prototype/prototype.min.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/prototype/validation.min.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/scriptaculous/builder.min.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/scriptaculous/effects-1.9.0.min.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/scriptaculous/dragdrop.min.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/scriptaculous/controls-1.9.0.min.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/scriptaculous/slider.min.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/varien/js.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/varien/form.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/varien/menu.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/mage/translate.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/mage/cookies.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/js/klarna.js"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/js/modernizr2.min.js?v=c8a12"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/js/acne-placeholder.js?v=c8a12"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/js/videocontrols.js?v=c8a12"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/js/minicart.js?v=c8a12"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/js/navigation.js?v=c8a12"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/js/jquery.product-image-navigation.js?v=c8a12"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/js/acne.js?v=c8a12"></script>
+<!--[if lt IE 9]>
+<link rel="stylesheet" type="text/css" href="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/css/ie8.css?v=c8a12" media="all" />
+<script type="text/javascript" src="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/js/html5.js?v=c8a12"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/js/jquery.ezmark.min.js?v=c8a12"></script>
+<script type="text/javascript" src="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/js/ezmark.js?v=c8a12"></script>
+<![endif]-->
+<!--[if IE 9]>
+<link rel="stylesheet" type="text/css" href="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/css/ie9.css?v=c8a12" media="all" />
+<![endif]-->
+<!--[if lt IE 8]>
+<link rel="stylesheet" type="text/css" href="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/css/ie7.css?v=c8a12" media="all" />
+<link rel="stylesheet" type="text/css" href="http://uat.acnestudios.com/skin/frontend/enterprise/default/css/styles-ie.css?v=c8a12" media="all" />
+<![endif]-->
+<!--[if IE 8]>
+<link rel="stylesheet" type="text/css" href="http://uat.acnestudios.com/skin/frontend/base/default/css/acne-ie8.css?v=c8a12" media="all" />
+<![endif]-->
+<!--[if IE 7]>
+<link rel="stylesheet" type="text/css" href="http://uat.acnestudios.com/skin/frontend/base/default/css/acne-ie7.css?v=c8a12" media="all" />
+<![endif]-->
+
+<link rel="stylesheet" media="screen and (max-width: 800px)" href="/skin/frontend/enterprise/acnewhite/css/scaling.css" />
+<link rel="stylesheet" media="screen and (max-height: 600px)" href="/skin/frontend/enterprise/acnewhite/css/scaling.css" />
+</head>
+<body class=" countryselector-index-index">
+<!-- 1column-checkout.phtml -->
+<!-- ClickTale Top part -->
+<script type="text/javascript">
+var WRInitTime=(new Date()).getTime();
+</script>
+<!-- ClickTale end of Top part -->
+    <header class="checkout">
+    <div class="content">
+        <a href="/" id="nav-link" class="navigation">Continue shopping</a>
+    </div>
+</header>
+
+
+<div class="wrapper 1col">
+    <div class="page">
+
+<div class="header-container">
+    <div class="header-wrapper">
+	   
+        
+
+    </div>
+	
+
+</div>
+
+<div class="logo_container">
+	<div>
+		<a href="">
+			<img src="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/img/logo_acne-large.png" alt="Acne" />
+		</a>
+	</div>
+</div>
+
+<div id="BodyContent" style="display: block;">
+  <div class="main col1-layout">
+    <div class="col-main">
+
+
+
+    
+<script type="text/javascript">
+function changeChooseCountrySidebar() {
+    var shippingCountryId;
+    if (typeof $('choosenRegionSelector') !== 'undefined') {
+        shippingCountryId = $('choosenRegionSelector').value;
+    }
+    var changeCountry = true;	// Originally: confirm('Your shopping bag may be emptied if you change country. Continue?');
+    var redirectToken = 'index';
+
+    if (changeCountry) {
+        new Ajax.Request('/productmanagement/index/saveItems/', {
+            method: 'post',
+            parameters: { 'choosenCountryId': shippingCountryId },
+            onSuccess: function (transport) {
+                var result = transport.responseText.evalJSON().random_nr;
+
+                if (result != '0') {
+                    // Country doesn't belong to this store.
+                    window.location = ([
+                        'http://uat.acnestudios.com/shipping-destination/',
+                        '?forceCountry=', shippingCountryId,
+                        '&cart=', result,
+                        '&redirectToken=', redirectToken
+                    ]).join('');
+                } else {
+                    // Country belongs to this store.
+                    window.location = ([
+                        '/shipping-destination/?forceCountry=SE&cart=1324080054_&redirectToken=index',
+                        '&',
+                        'forceCountry=', shippingCountryId,
+                        '&redirectToken=', redirectToken
+                    ]).join('');
+                }
+            },
+            onFailure: function () {
+                console.log('Failure when setting shipping country.');
+            }
+        });
+    } else {
+        $('choosenRegionSelector').options[$choosenRegionSelector].selected = true;
+    }
+}
+
+Event.observe(window, 'load', function() {
+    $('new_country').update('Sweden ');
+    $('country_sellector_sidebar_id', 'country_sellector_txt').invoke('hide');
+    $('reload').setStyle({ 'display': 'block' });
+
+    var redirectUrl = 'http://uat.acnestudios.com/';
+    setTimeout(function() { window.location = redirectUrl; }, 2500);
+});
+</script>
+	<div class="countryselector">
+		<h1>Choose your shipping destination</h1>
+		<p>Please select the country where your order will be shipped to. This will give you the correct pricing, delivery times and shipping costs for your destination.</p>
+		<div id="reload" class="no-display">
+			<img src="http://uat.acnestudios.com/skin/frontend/enterprise/acnewhite/images/ajax-loader.gif">
+
+			<h4>You are now being transferred to the website for <span id="new_country"></span>.</h4>
+		</div>
+		<p id="country_sellector_txt" class="a-center">Delivery country</p>
+		<div id="country_sellector_sidebar_id"><select style="width: 125px" id="choosenRegionSelector" name="marketSelector" onChange="changeChooseCountrySidebar()"><option  value="AX">Aland Islands </option>\r\n<option  value="AD">Andorra </option>\r\n<option  value="AR">Argentina </option>\r\n<option  value="AU">Australia </option>\r\n<option  value="AT">Austria </option>\r\n<option  value="BH">Bahrain </option>\r\n<option  value="BE">Belgium </option>\r\n<option  value="BR">Brazil </option>\r\n<option  value="VG">British Virgin Islands</option>\r\n<option  value="BG">Bulgaria </option>\r\n<option  value="CA">Canada </option>\r\n<option  value="CL">Chile </option>\r\n<option  value="CN">China </option>\r\n<option  value="HR">Croatia </option>\r\n<option  value="CY">Cyprus </option>\r\n<option  value="CZ">Czech Republic </option>\r\n<option  value="DK">Denmark </option>\r\n<option  value="EE">Estonia </option>\r\n<option  value="EU">Europe</option>\r\n<option  value="FO">Faroe Islands </option>\r\n<option  value="FI">Finland </option>\r\n<option  value="FR">France </option>\r\n<option  value="DE">Germany </option>\r\n<option  value="GI">Gibraltar </option>\r\n<option  value="GR">Greece </option>\r\n<option  value="GL">Greenland </option>\r\n<option  value="GG">Guernsey </option>\r\n<option  value="VA">Holy See (Vatican City State) </option>\r\n<option  value="HK">Hong Kong </option>\r\n<option  value="HU">Hungary </option>\r\n<option  value="IS">Iceland </option>\r\n<option  value="IN">India </option>\r\n<option  value="IE">Ireland </option>\r\n<option  value="IL">Israel </option>\r\n<option  value="IT">Italy </option>\r\n<option  value="JP">Japan </option>\r\n<option  value="JE">Jersey </option>\r\n<option  value="KW">Kuwait </option>\r\n<option  value="LV">Latvia </option>\r\n<option  value="LI">Liechtenstein </option>\r\n<option  value="LT">Lithuania </option>\r\n<option  value="LU">Luxembourg </option>\r\n<option  value="MT">Malta </option>\r\n<option  value="MX">Mexico </option>\r\n<option  value="MC">Monaco </option>\r\n<option  value="NL">Netherlands </option>\r\n<option  value="NZ">New Zealand </option>\r\n<option  value="NO">Norway </option>\r\n<option  value="O1">Other Country</option>\r\n<option  value="PL">Poland </option>\r\n<option  value="PT">Portugal </option>\r\n<option  value="PR">Puerto Rico </option>\r\n<option  value="QA">Qatar </option>\r\n<option  value="RO">Romania </option>\r\n<option  value="RU">Russian Federation </option>\r\n<option  value="SA">Saudi Arabia </option>\r\n<option  value="SG">Singapore </option>\r\n<option  value="SK">Slovakia </option>\r\n<option  value="SI">Slovenia </option>\r\n<option  value="ZA">South Africa </option>\r\n<option  value="KR">South Korea </option>\r\n<option  value="ES">Spain </option>\r\n<option  value="SJ">Svalbard and Jan Mayen </option>\r\n<option  selected  value="SE">Sweden </option>\r\n<option  value="CH">Switzerland </option>\r\n<option  value="TW">Taiwan </option>\r\n<option  value="TH">Thailand </option>\r\n<option  value="TR">Turkey </option>\r\n<option  value="AE">United Arab Emirates </option>\r\n<option  value="GB">United Kingdom </option>\r\n<option  value="US">United States </option>\r\n<option  value="VI">Virgin Islands</option>\r\n</select></div>	</div>
+
+        
+<!-- BEGIN GOOGLE ANALYTICS CODE -->
+<script type="text/javascript">
+//<![CDATA[
+    (function() {
+        var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ga);
+    })();
+
+    var _gaq = _gaq || [];
+_gaq.push(['_setAccount', 'UA-649968-4']);
+_gaq.push(['_setDomainName', '.acnestudios.com']);
+_gaq.push(['_trackPageview']);
+
+//]]>
+</script>
+<!-- END GOOGLE ANALYTICS CODE -->
+
+    <!-- ClickTale Bottom part -->
+<div id="ClickTaleDiv" style="display: none;"></div>
+<script type="text/javascript">
+if(document.location.protocol!='https:')
+  document.write(unescape("%3Cscript src='http://s.clicktale.net/WRb.js' type='text/javascript'%3E%3C/script%3E"));
+</script>
+<script type="text/javascript">
+ClickTaleFetchFrom="http://uat.acnestudios.com/lib/ClickTale/ClickTaleCache.php?t=5d421f2edb14e58aef78";
+if(typeof ClickTale=='function') ClickTale(49091,1,"www");
+</script>
+<!-- ClickTale end of Bottom part -->
+  </body>
+</html>
+
+
+    </div><!-- close: col-main -->
+  </div><!-- close: main col1-layout -->
+
+
+<div id="PopupCountrySelector">
+	<a href="#" onclick="closeTransparentCanvas('Level1'); $('PopupCountrySelector').hide(); return false">x</a>
+	<h1>CHANGE COUNTRY</h1>
+    	<p>You are currently shopping at the Sweden  website.</p>
+	<p>Changing your region will give you the correct pricing, delivery time, and shipping costs for your destination. Please be aware that the price for an item may vary based on your shipping destination to reflect local market pricing.</p>
+	<p>PLEASE NOTE: You will lose the contents of your shopping bag if you change regions.</p>
+	<button type="button" onclick="window.location='http://uat.acnestudios.com/shipping-destination/?redirectToken=onestepcheckout'">Continue</button>
+	<button id="Cancel" type="button" onclick="closeTransparentCanvas('Level1'); $('PopupCountrySelector').hide(); return false">Cancel</button>
+</div>
+
+      </div><!-- close: #BodyContent -->
+
+
+<footer>
+   <div class="content">
+		<div class="information">
+			<a href="callto://+460855119400">Customer Service +46 (0) 855 119 400</a>		</div>
+	</div>
+</footer><!-- #Footer -->
+
+
+    </div><!-- close: page -->
+</div><!-- close: wrapper 1col -->
