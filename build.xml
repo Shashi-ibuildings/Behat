@@ -1,12 +1,12 @@
-<project name="behat" default= "behat" basedir="">
-   <delete dir="${basedir}/report" />
-   <mkdir dir="${basedir}/report"/>
+<project name="behat" basedir="">
    <target name="behat">
     <exec dir="${basedir}" executable="behat" failonerror="true">
      <arg line="-f junit --out ${basedir}/report"/>
     </exec>
    </target>
    <target name="seleniumTests" description="Start Server ;  stop Server">
+       <delete dir="${basedir}/report" />
+       <mkdir dir="${basedir}/report"/>
       <parallel>
           <antcall target="start-selenium-server"></antcall>
           <sequential>
@@ -15,42 +15,29 @@
                   <http url="http://localhost:4444/selenium-server/driver/?cmd=testComplete"/>
               </waitfor>
                   <antcall target="selenium"></antcall>
+                  <antcall target="create-test-report"></antcall>
                   <antcall target="stop-server"></antcall>
           </sequential>
       </parallel>
    </target>
-   
-   <target name="WebDriverTests" description="Start Server ;  stop Server">
-      <parallel>
-          <antcall target="start-selenium-server"></antcall>
-          <sequential>
-              <echo taskname="waitfor" message="Wait for selenium server launch" />
-              <waitfor maxwait="2" maxwaitunit="minute" checkevery="100">
-                  <http url="http://localhost:4444/selenium-server/driver/?cmd=testComplete"/>
-              </waitfor>
-                  <antcall target="webdriver"></antcall>
-                  <antcall target="stop-server"></antcall>
-          </sequential>
-      </parallel>
-   </target>
-   
-   <target name="sahiTests" description="Start Server">
+
+   <target name="sahiTests" description="Start Server ; stop server">
+       <delete dir="${basedir}/report" />
+       <mkdir dir="${basedir}/report"/>
       <parallel>
           <antcall target="start-sahi-server"></antcall>
           <sequential>
               <echo taskname="waitfor" message="Wait for sahi server launch" />
-              <waitfor maxwait="1" maxwaitunit="minute" checkevery="100">
+              <waitfor maxwait="3" maxwaitunit="second" checkevery="100">
                   <http url="http://sahi.example.com/_s_/dyn/Driver_initialized"/>
               </waitfor>
                   <antcall target="sahi"></antcall>
-                 <antcall target="stop_sahiserver"></antcall>
+                  <antcall target="create-test-report"></antcall>
+                  <antcall target="stop_sahiserver"></antcall>
 
           </sequential>
       </parallel>
    </target>
-   
-   
-   
    <target name="selenium">
     <exec dir="${basedir}" executable="behat" failonerror="true">
      <arg line="-c selenium.yml -f junit --out ${basedir}/report"/>
@@ -82,14 +69,14 @@
       <echo taskname="selenium-shutdown" message="DGF Errors during shutdown are expected" />
    </target>
    <target name="start-sahi-server">
-     <exec dir="${basedir}/sahi/userdata/bin" executable="bash" failonerror="true">
-     <arg line="start_sahi.sh"/>
+     <exec dir="${basedir}/sahi" executable="ant" failonerror="true">
+     <arg line="-f demo.xml start"/>
     </exec> 
    </target>
    <target name="stop_sahiserver">
-	<echo message="going to stop Sahi server" />
-	<sahi stop="true" sahihost="localhost" sahiport="9999"/>
-	<antcall target="proxyoff" />
+	<exec dir="${basedir}/sahi" executable="ant" failonerror="true">
+        <arg line="-f demo.xml stopsahi"/>
+        </exec> 
 </target>
    <target name="create-test-report"  
           description="Generate reports for executed JUnit tests.">  
