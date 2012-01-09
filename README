@@ -1,0 +1,17 @@
+Behat is a BDD framework for PHP.  
+
+Behat comes up with Mink  which is used for browser emulation (functional testing) where browser interaction takes place.
+
+Drivers for browser emulation:
+
+    Selenium 1 Driver provides bridge for  Selenium RC  (Selenium 1).
+    Selenium 2 driver provides bridge for Selenium 2. (Facebook webdriver) for PHP.
+    Sahi driver provides bridge for Sahi testing tool.
+    Goutte driver  provides a bridge for Goutte headless browser.
+
+You can use this test automation framework directly by cloning the repo into your local machine
+
+You can refer wiki to know how to implement Behat test automation framework. 
+
+     https://github.com/Shashi-ibuildings/Behat/wiki/Behat-Test-Automation-Framework
+
