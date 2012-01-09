@@ -67,11 +67,11 @@ Run feature with webdriver
      $ant webdriverTests
 
 
-Run feature with webdriver
+Run feature with Sauce Labs
 
      $ cd /path/to/my/project
 
-     $ant webdriverTests
+     $ant sauceTests
 
 
 
