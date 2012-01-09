@@ -4,12 +4,12 @@
      <arg line="-f junit --out ${basedir}/report"/>
     </exec>
    </target>
-   <target name="sauceTests">
+   <target name="runSauce">
     <exec dir="${basedir}" executable="behat" failonerror="true">
      <arg line="-c sauce.yml -f junit --out ${basedir}/report"/>
     </exec>
    </target>
-   <target name="seleniumTests" description="Start Server ;  stop Server">
+   <target name="runSelenium" description="Start Server ;  stop Server">
        <delete dir="${basedir}/report" />
        <mkdir dir="${basedir}/report"/>
       <parallel>
@@ -26,7 +26,7 @@
       </parallel>
    </target>
    
-   <target name="webdriverTests" description="Start Server ;  stop Server">
+   <target name="runWebdriver" description="Start Server ;  stop Server">
        <delete dir="${basedir}/report" />
        <mkdir dir="${basedir}/report"/>
       <parallel>
@@ -43,7 +43,7 @@
       </parallel>
    </target>
 
-   <target name="sahiTests" description="Start Server ; stop server">
+   <target name="runSahi" description="Start Server ; stop server">
        <delete dir="${basedir}/report" />
        <mkdir dir="${basedir}/report"/>
       <parallel>
