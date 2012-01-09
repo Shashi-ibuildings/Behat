@@ -1,25 +1,18 @@
 PLease use wiki page for better vision 
+https://github.com/Shashi-ibuildings/Behat/wiki/Behat-Test-Automation-Framework
 
 
-                 https://github.com/Shashi-ibuildings/Behat/wiki/Behat-Test-Automation-Framework
-
-
-
+Behat Test Automation Framework:
 
 Behat is a BDD framework for PHP.  
 
 Behat comes up with Mink  which is used for browser emulation (functional testing) where browser interaction takes place.
-
-Behat Test Automation Framework:
 
 This frameowrk comes with Behat, ANT and Sauce Labs configuration. 
 
 Behat + Mink framework can be used for the web acceptance testing. Testers can clone this framework and use directly to run features.
 
 You can use this test automation framework directly by cloning the repo into your local machine. Step by step guide how to use behat test automation framework is specified in Wiki.
-
-
-
 
 
 Install Behat and Mink .
@@ -86,6 +79,8 @@ Run feature with webdriver
 If you are using selenium driver then you have to implement wait in your step definitions every time there is new page is loaded like this:
 
         $this->getMink()->getSession()->wait("3000");
+
+
 Sahi driver waits automatically for element to be appear on page or page to load. You don't have to implement wait if you would like to use Sahi driver.
 
 Once you run 'ant' command from terminal you will see your feature running in browser, you configured.You will see reports generated in "/report" directory. There will be HTML reports as well.
@@ -103,7 +98,7 @@ To generate report, point junit reports to "report/*.xml" It will create report 
 
 
 
-       Wiki Link :  https://github.com/Shashi-ibuildings/Behat/wiki/Behat-Test-Automation-Framework
+Wiki Link :  https://github.com/Shashi-ibuildings/Behat/wiki/Behat-Test-Automation-Framework
 
 
 
