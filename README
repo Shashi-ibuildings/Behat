@@ -12,6 +12,8 @@ Behat comes up with Mink  which is used for browser emulation (functional testin
 
 Behat Test Automation Framework:
 
+This frameowrk comes with Behat, ANT and Sauce Labs configuration. 
+
 Behat + Mink framework can be used for the web acceptance testing. Testers can clone this framework and use directly to run features.
 
 You can use this test automation framework directly by cloning the repo into your local machine. Step by step guide how to use behat test automation framework is specified in Wiki.
@@ -101,7 +103,7 @@ To generate report, point junit reports to "report/*.xml" It will create report 
 
 
 
-
+       Wiki Link :  https://github.com/Shashi-ibuildings/Behat/wiki/Behat-Test-Automation-Framework
 
 
 
