@@ -10,8 +10,8 @@ default:
         port: 80
         browser: >
           {
-            "username":         "Session",
-            "access-key":       "51b14f6e-5938-4a1c-9a2c-67ecb7420c13",
+            "username":         "Your Username",
+            "access-key":       "Your API Key",
             "browser":          "firefox",
             "browser-version":  "7",
             "os":               "Windows 2003",
