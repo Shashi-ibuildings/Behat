@@ -1,0 +1,78 @@
+Behat is a BDD framework for PHP.  
+
+Behat comes up with Mink  which is used for browser emulation (functional testing) where browser interaction takes place.
+
+Behat Test Automation Framework:
+
+Behat + Mink framework can be used for the web acceptance testing. Testers can clone this framework and use directly to run features.
+
+You can use this test automation framework directly by cloning the repo into your local machine. Step by step guide how to use behat test automation framework is specified in Wiki.
+
+
+Install Behat and Mink .
+
+Clone Behat Test Automation Framework from GitHub
+
+Clone test framework from Github into your local machine.
+
+Make sure you have initialized Behat in your root directory, currently its "Behat".
+
+Now you are ready to use the framework for adding features and running them with different drivers like Selenium, Sahi or webdriver.
+
+How to use framework?
+
+Change "base_url" "browser" parameter in all config files like 'behat.yml', 'sahi.yml', 'selenium.yml', and 'webdriver.yml' as per your project requirement.
+
+Write sample features for your project
+
+How to run features
+
+Requirement:
+
+You need to install Apache Ant on your localhost. You can download and install Ant from Apache Ant.
+
+No need install or download Seleniumor Sahi. It is configured inside this framework. Ant will automatically launch selenium or Sahi server still you need to update version of selenium server frequently. If you like to run it locally, you will need to install Selenium and Sahi.
+
+Now you got three drivers options to run your features
+
+Sahi Driver
+Selenium Driver
+Selenium 2 Driver (webdriver)
+Run feature with selenium driver
+
+  $ cd /path/to/my/project
+
+   $ant seleniumTests
+Run feature with Sahi driver.
+
+      $ cd /path/to/my/project
+
+      $ant sahiTests
+Run feature with webdriver
+
+     $ cd /path/to/my/project
+
+     $ant webdriverTests
+If you are using selenium driver then you have to implement wait in your step definitions every time there is new page is loaded like this:
+
+        $this->getMink()->getSession()->wait("3000");
+Sahi driver waits automatically for element to be appear on page or page to load. You don't have to implement wait if you would like to use Sahi driver.
+
+Once you run 'ant' command from terminal you will see your feature running in browser, you configured.You will see reports generated in "/report" directory. There will be HTML reports as well.
+
+Configure CI Server
+
+You can configure these ANT tasks on CI server. Specify target "sahiTests" for Sahi driver. Specify target "seleniumTests" for selenium driver Specify target "webdriverTests" for Selenium 2 driver
+
+To generate report, point junit reports to "report/*.xml" It will create report in Jenkins.
+
+
+
+
+
+
+
+You can refer wiki to know how to implement Behat test automation framework. 
+
+        https://github.com/Shashi-ibuildings/Behat/wiki/Behat-Test-Automation-Framework
+
