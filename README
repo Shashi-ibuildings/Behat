@@ -1,3 +1,11 @@
+PLease use wiki page for better vision 
+
+
+https://github.com/Shashi-ibuildings/Behat/wiki/Behat-Test-Automation-Framework
+
+
+
+
 Behat is a BDD framework for PHP.  
 
 Behat comes up with Mink  which is used for browser emulation (functional testing) where browser interaction takes place.
@@ -7,6 +15,9 @@ Behat Test Automation Framework:
 Behat + Mink framework can be used for the web acceptance testing. Testers can clone this framework and use directly to run features.
 
 You can use this test automation framework directly by cloning the repo into your local machine. Step by step guide how to use behat test automation framework is specified in Wiki.
+
+
+
 
 
 Install Behat and Mink .
@@ -38,21 +49,38 @@ Now you got three drivers options to run your features
 Sahi Driver
 Selenium Driver
 Selenium 2 Driver (webdriver)
+
+
 Run feature with selenium driver
 
   $ cd /path/to/my/project
 
    $ant seleniumTests
+
+
 Run feature with Sahi driver.
 
       $ cd /path/to/my/project
 
       $ant sahiTests
+
+
 Run feature with webdriver
 
      $ cd /path/to/my/project
 
      $ant webdriverTests
+
+
+Run feature with webdriver
+
+     $ cd /path/to/my/project
+
+     $ant webdriverTests
+
+
+
+
 If you are using selenium driver then you have to implement wait in your step definitions every time there is new page is loaded like this:
 
         $this->getMink()->getSession()->wait("3000");
@@ -60,7 +88,11 @@ Sahi driver waits automatically for element to be appear on page or page to load
 
 Once you run 'ant' command from terminal you will see your feature running in browser, you configured.You will see reports generated in "/report" directory. There will be HTML reports as well.
 
+
+
 Configure CI Server
+
+
 
 You can configure these ANT tasks on CI server. Specify target "sahiTests" for Sahi driver. Specify target "seleniumTests" for selenium driver Specify target "webdriverTests" for Selenium 2 driver
 
@@ -72,7 +104,5 @@ To generate report, point junit reports to "report/*.xml" It will create report 
 
 
 
-You can refer wiki to know how to implement Behat test automation framework. 
 
-        https://github.com/Shashi-ibuildings/Behat/wiki/Behat-Test-Automation-Framework
 
