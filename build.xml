@@ -8,16 +8,8 @@
      <delete dir="${basedir}/report" />
        <mkdir dir="${basedir}/report"/>
       <parallel>
-          <antcall target="start-selenium-server"></antcall>
-          <sequential>
-              <echo taskname="waitfor" message="Wait for selenium server launch" />
-              <waitfor maxwait="2" maxwaitunit="minute" checkevery="100">
-                  <http url="http://localhost:4444/selenium-server/driver/?cmd=testComplete"/>
-              </waitfor>
                   <antcall target="sauce"></antcall>
                   <antcall target="create-test-report"></antcall>
-                  <antcall target="stop-server"></antcall>
-          </sequential>
       </parallel>
    </target>
    <target name="runSelenium" description="Start Server ;  stop Server">
